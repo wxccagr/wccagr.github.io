@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html class="dj_webkit dj_chrome dj_contentbox">
+    <head>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+// demo load language file
+var lang= window.localStorage.getItem('lang')?window.localStorage.getItem('lang'):"en";
+var s = document.createElement('script');
+s.src = "language/" + lang + ".js?" + new Date().getTime();
+s.type = "text/javascript";
+s.async = false;
+document.getElementsByTagName('head')[0].appendChild(s);
+</script>
+<meta charset="utf-8">
+		
+        <style type="text/css">
+            @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate) {
+                display: none !important;
+            }
+
+            ng\:form {
+                display: block;
+            }
+
+            .ng-animate-shim {
+                visibility: hidden;
+            }
+
+            .ng-anchor {
+                position: absolute;
+            }
+        </style>
+        <title id="titleTag">Calabrio ONE</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+        <style>
+            /*
+These need to be declared before angular bootstraps.
+Otherwise angular will not add the transition classes.
+*/
+            .group-by-row__inner.ng-enter-prepare, .group-by-row__inner.ng-leave {
+                transition: 10s;
+            }
+        </style>
+
+
+        <style data-jss="">
+            .filterInput-0-0-1 {
+                width: 100% !important;
+                margin-bottom: 4px;
+            }
+
+            .titleContainer-0-0-2 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .titleLabel-0-0-3 {
+                flex: 1 1 auto;
+                text-align: center;
+            }
+
+            .sortIcon-0-0-4 {
+                flex: 0 0 auto;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-5 {
+                position: relative;
+                margin-left: 20px;
+            }
+
+            .usernameContainer-0-0-6 {
+                color: white;
+                cursor: pointer;
+                display: flex;
+                opacity: 0.7;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            .dropdown-0-0-8 {
+                right: 0;
+                width: 225px;
+                bottom: 0;
+                position: absolute;
+                transform: translateY(100%);
+                box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+                white-space: nowrap;
+                border-radius: 4px;
+                background-color: #fff;
+            }
+
+            .menuItem-0-0-9 {
+                color: rgba(0, 0, 0, 0.87);
+                cursor: pointer;
+                padding: 8px 16px;
+                overflow: hidden;
+            }
+
+            .menuItem-0-0-9:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+
+            .tenantInfo-0-0-10 {
+                color: rgba(0, 0, 0, 0.87);
+                display: flex;
+                padding: 8px 16px;
+                overflow: hidden;
+            }
+
+            .tenantLabel-0-0-11 {
+                color: rgba(0, 0, 0, 0.54);
+                padding-right: 5px;
+            }
+
+            .toggleItem-0-0-13 {
+                color: rgba(0, 0, 0, 0.87);
+                cursor: pointer;
+                padding: 8px 16px;
+                overflow: hidden;
+                text-indent: 8px;
+            }
+
+            .toggleItem-0-0-13:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+
+            .divider-0-0-14 {
+                border: none;
+                height: 1px;
+                margin: 0;
+                list-style: none;
+                flex-shrink: 0;
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-15 {
+                width: 24px;
+                cursor: pointer;
+                height: 24px;
+                position: relative;
+            }
+
+            .checkboxIcon-0-0-16 {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .focusedIcon-0-0-17 {
+                border-radius: 25%;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            .input-0-0-18 {
+                top: 0;
+                left: 0;
+                width: 24px;
+                cursor: default;
+                height: 24px;
+                margin: 0;
+                opacity: 0;
+                position: absolute;
+            }
+
+            .input-0-0-18:enabled {
+                cursor: pointer;
+            }
+
+            .disabled-0-0-19 {
+                cursor: default;
+                opacity: 0.36;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-20 {
+                width: 24px;
+                cursor: pointer;
+                height: 24px;
+                position: relative;
+            }
+
+            .checkboxIcon-0-0-21 {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .focusedIcon-0-0-22 {
+                border-radius: 25%;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            .input-0-0-23 {
+                top: 0;
+                left: 0;
+                width: 24px;
+                cursor: default;
+                height: 24px;
+                margin: 0;
+                opacity: 0;
+                position: absolute;
+            }
+
+            .input-0-0-23:enabled {
+                cursor: pointer;
+            }
+
+            .disabled-0-0-24 {
+                cursor: default;
+                opacity: 0.36;
+            }
+        </style>
+        <style data-jss=""></style>
+        <style data-jss="">
+            .root-0-0-28 {
+                width: 24px;
+                height: 24px;
+                position: relative;
+            }
+
+            .input-0-0-29 {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                opacity: 0;
+                position: absolute;
+            }
+
+            .input-0-0-29:enabled {
+                cursor: pointer;
+            }
+
+            .radioIcon-0-0-30 {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+        </style>
+        <style data-jss="">
+            .textbox {
+                width: inherit;
+                padding: 1px;
+                position: relative;
+                font-size: 14px;
+                border-style: solid;
+                border-radius: 4px;
+            }
+
+            .textbox input[type='text'], .textbox [type='password'], .textbox [type='email'] {
+                width: 100%;
+                border: none;
+            }
+
+            .textbox input[disabled], .textbox select[disabled] {
+                background-color: inherit;
+            }
+
+            .textbox input[type='text']::- webkit - input - placeholder, .textbox [type='password']::- webkit - input - placeholder, .textbox [type='email']::- webkit - input - placeholder {
+                color: #AAAAAA;
+                font-size: 14px;
+                font-style: italic;
+                font-family: Strait, Verdana, Arial, sans-serif;
+            }
+
+            .textbox input[type='text']::-moz-placeholder, .textbox [type='password']::-moz-placeholder, .textbox [type='email']::-moz-placeholder {
+                color: #AAAAAA;
+                font-size: 14px;
+                font-style: italic;
+                font-family: Strait, Verdana, Arial, sans-serif;
+            }
+
+            .textbox input[type='text']:- ms - input - placeholder, .textbox [type='password']:- ms - input - placeholder, .textbox [type='email']:- ms - input - placeholder {
+                color: #AAAAAA;
+                font-size: 14px;
+                font-style: italic;
+                font-family: Strait, Verdana, Arial, san -serif;
+            }
+
+            .textbox input[type='text']:-moz-placeholder, .textbox [type='password']:-moz-placeholder, .textbox [type='email']:-moz-placeholder {
+                color: #AAAAAA;
+                font-size: 14px;
+                font-style: italic;
+                font-family: Strait, Verdana, Arial, sans-serif;
+            }
+
+            .textBoxFocused {
+                padding: 0 !important;
+                border-color: #4FC3F7 !important;
+                border-width: 2px !important;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-31 {
+                position: relative;
+            }
+
+            .svg-0-0-32 {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .path-0-0-33 {
+                fill: currentcolor;
+            }
+
+            material-icon {
+                display: inline-block;
+            }
+        </style>
+        <style data-jss="">
+            .items-0-0-36 {
+                border: 1px solid #c8c8c8;
+                height: 242px;
+                overflow-y: auto;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-37 {
+                cursor: pointer;
+                padding: 3px 10px;
+                font-size: 12px;
+                word-wrap: break-word;
+                user-select: none;
+            }
+
+            .root-0-0-37:hover:not(.selected-0-0-38) {
+                background-color: #c2c2c2;
+            }
+
+            .selected-0-0-38 {
+                color: #fdfdfd;
+                background-color: #62B5E5;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-39 {
+                color: #fdfdfd;
+                padding: 5px 2px;
+                font-size: 18px;
+                background: linear-gradient(to bottom, #404040 0%, #6c6c6b 40%, #707070 100%);
+                border-top: 1px solid #c8c8c8;
+                line-height: 22px;
+                user-select: none;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-40 {
+                width: 320px;
+                outline: none;
+                position: fixed;
+                box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+                max-height: calc(100vh - 50px);
+                min-height: 100px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                border-radius: 4px;
+                background-color: #fff;
+            }
+        </style>
+        <style data-jss=""></style>
+        <style data-jss="">
+            .root-0-0-42 {
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+                background-color: #ececec;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-43 {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                background-color: #ececec;
+            }
+        </style>
+        <style data-jss="">
+            menu-item {
+                display: block;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+            menu-item:last-child {
+                border-bottom: none;
+            }
+
+            menu-item:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-45 {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: fixed;
+            }
+        </style>
+        <style data-jss=""></style>
+        <style data-jss="">
+            .root-0-0-52 {
+                display: inline-block;
+                animation: keyframes-muiProgressCircularRotate-0-0-55 1.4s linear infinite;
+                line-height: 1;
+            }
+
+            .circle-0-0-54 {
+                animation: keyframes-muiProgressCircularDash-0-0-56 1.4s ease-in-out infinite;
+                stroke-dasharray: 80px, 200px;
+                stroke-dashoffset: 0px;
+            }
+
+            @-webkit-keyframes keyframes-muiProgressCircularRotate-0-0-55 {
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @-webkit-keyframes keyframes-muiProgressCircularDash-0-0-56 {
+                0% {
+                    stroke-dasharray: 1px, 200px;
+                    stroke-dashoffset: 0px;
+                }
+
+                50% {
+                    stroke-dasharray: 100px, 200px;
+                    stroke-dashoffset: -15px;
+                }
+
+                100% {
+                    stroke-dasharray: 100px, 200px;
+                    stroke-dashoffset: -120px;
+                }
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-57 {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1300;
+                position: fixed;
+            }
+
+            .background-0-0-58 {
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+                background-color: #000;
+            }
+
+            .centeredContainer-0-0-59 {
+                top: 50%;
+                left: 50%;
+                display: flex;
+                padding: 10px;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .message-0-0-61 {
+                padding: 10px 0;
+                max-width: 200px;
+                text-align: center;
+            }
+
+            .cancelButton-0-0-62 {
+                cursor: pointer;
+                padding-top: 10px;
+                text-decoration: underline;
+            }
+        </style>
+        <style data-jss=""></style>
+        <style data-jss="">
+            .dijitRadio {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%3E%3Cpath%20d='M12,20C7.58,20%204,16.42%204,12C4,7.58%207.58,4%2012,4C16.42,4%2020,7.58%2020,12C20,16.42%2016.42,20%2012,20M12,2C6.48,2%202,6.48%202,12C2,17.52%206.48,22%2012,22C17.52,22%2022,17.52%2022,12C22,6.48%2017.52,2%2012,2Z'%20fill='rgba(0,%200,%200,%200.87)'%3E%3C/path%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+            }
+
+            .dijitRadio.dijitRadioChecked {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%3E%3Cpath%20d='M12,20C7.58,20%204,16.42%204,12C4,7.58%207.58,4%2012,4C16.42,4%2020,7.58%2020,12C20,16.42%2016.42,20%2012,20M12,2C6.48,2%202,6.48%202,12C2,17.52%206.48,22%2012,22C17.52,22%2022,17.52%2022,12C22,6.48%2017.52,2%2012,2M12,7C9.24,7%207,9.24%207,12C7,14.76%209.24,17%2012,17C14.76,17%2017,14.76%2017,12C17,9.24%2014.76,7%2012,7Z'%20fill='rgb(79,195,247)'%3E%3C/path%3E%3C/svg%3E");
+            }
+
+            .dijitRadio input {
+                width: 24px;
+                border: none;
+                height: 24px;
+                opacity: 0.01;
+            }
+
+            .dijitRadio input:enabled {
+                cursor: pointer;
+            }
+        </style>
+        <style data-jss="">
+            html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+                font: inherit;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                vertical-align: middle;
+            }
+
+            *, *:focus, input, textarea, input:focus, textarea:focus {
+                outline: none;
+            }
+
+            article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+
+            ol, ul {
+                list-style: none;
+            }
+
+            blockquote, q {
+                quotes: none;
+            }
+
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+
+            embed {
+                top: -50000px;
+                width: 0;
+                height: 0;
+                position: absolute;
+            }
+
+            html, body, input, textarea {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 14px;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                font-weight: 400;
+            }
+        </style>
+        <style data-jss="">
+            dashboard-classic {
+                flex: 1 1 auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .root-0-0-63 {
+                height: 0 !important;
+            }
+			
+			.demowfm {
+				display: none;
+			}
+
+.manager-group.dataManagement .category, .manager-group.dataManagement .bullet {
+    background-color: #773996;
+}		
+.manager-group .icon.data-management {
+    background-color: #773996;
+}
+		
+		
+		</style>
+        <style data-jss=""></style>
+        <!-- ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/c99b9b148e7b00d0c233f9686a2be59f.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/c99b9b148e7b00d0c233f9686a2be59f.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/4001e849a06d6bc10afc33c82161d05b.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/4001e849a06d6bc10afc33c82161d05b.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/ab7247d444fee62de072f6a321ababfd.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/ab7247d444fee62de072f6a321ababfd.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/e470fe8e9a3b32109b23519349e5c453.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/e470fe8e9a3b32109b23519349e5c453.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/e6b2cea849266d726b6d06da1fbabf6b.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/e6b2cea849266d726b6d06da1fbabf6b.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/e9d48df6052fe23aa3e5c929aa1af60a.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/e9d48df6052fe23aa3e5c929aa1af60a.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/0ce1a96e9f927e48c05807a0359e60bc.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/0ce1a96e9f927e48c05807a0359e60bc.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/59f8905cbea048eab534be756cdadcc7.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/59f8905cbea048eab534be756cdadcc7.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/5de6634df7497edd30259a653a655adb.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/5de6634df7497edd30259a653a655adb.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/11bdd4ea128ac9343e6960935ec5cc34.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/11bdd4ea128ac9343e6960935ec5cc34.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/475aba2255300b0ac312e0b089a3b4c2.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/475aba2255300b0ac312e0b089a3b4c2.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/98137250d4d0d16cb4c321aaa02147fd.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/98137250d4d0d16cb4c321aaa02147fd.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/332bcebf765e359eb8f1e049939910f6.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/332bcebf765e359eb8f1e049939910f6.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/5662197bc104d93c32a15fa287d43740.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/5662197bc104d93c32a15fa287d43740.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/72f6b22a2ce01787a08617aecbf6b445.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/72f6b22a2ce01787a08617aecbf6b445.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/53de80c27d2289402b1c404ff28a61bb.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/53de80c27d2289402b1c404ff28a61bb.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/9b1391cbef2d9cc27011ea9db154a517.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/9b1391cbef2d9cc27011ea9db154a517.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/060d821c359768d8a9cda1e18fa30b63.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/060d821c359768d8a9cda1e18fa30b63.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/a0ae0d66c9b7fe382908321c87d16cf9.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/a0ae0d66c9b7fe382908321c87d16cf9.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/c820c1c8ca66d01008582e30a8791c10.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/c820c1c8ca66d01008582e30a8791c10.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/86a1a56f83e0f32511a1a9a33d07ce1c.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/86a1a56f83e0f32511a1a9a33d07ce1c.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/5415040488a2b0ffc234937b78a2ccfb.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/5415040488a2b0ffc234937b78a2ccfb.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/d301099755099fce413765862ea03674.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/d301099755099fce413765862ea03674.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link href="./classic/40f9165f245c9356129ddd453897fc7b.ico" type="image/x-icon" rel="shortcut icon" id="faviconTag">
+    </head>
+    <body class="cone calabrio">
+        <div id="ngAppContainer" class="ng-scope">
+            <!-- uiView: -->
+            <div data-ui-view="" class="ng-scope" style="">
+                <div class="cone calabrio ng-scope app-container" ng-class="showHeader ? 'app-container' : 'app-container app-container--own-window'">
+ 
+ <!-- uiView: -->
+                    <div class="mainBody ng-scope" data-ui-view="">
+                        <!-- uiView: -->
+                        <div data-ui-view="" class="app-wrapper admin-landing-page ng-scope">
+                            <div class="app-title ng-scope">
+                                <div class="admin-icon"></div>
+                                <h1 class="lang ng-binding" lang="applicationManagement" en="Application Management"></h1>
+                                <admin-group-selector class="ng-scope">
+                                    <div class="admin-group-selector">
+                                        <!-- ngIf: isCategoryAccessible('wfm') || isCategoryAccessible('qm') || isCategoryAccessible('cas') -->
+                                        <div data-ng-click="setFilter('')" data-ng-if="isCategoryAccessible('wfm') || isCategoryAccessible('qm') || isCategoryAccessible('cas')" data-ng-class="{active: filter == ''}" lang="allEverything" en="All" class="lang selector ng-binding ng-scope active"></div>
+                                        <!-- end ngIf: isCategoryAccessible('wfm') || isCategoryAccessible('qm') || isCategoryAccessible('cas') -->
+                                        <!-- ngIf: isCategoryAccessible('wfm') -->
+                                        <div data-ng-click="setFilter('wfm')" data-ng-if="isCategoryAccessible('wfm')" data-ng-class="{active: filter == 'wfm'}" lang="wfm" en="WFM" class="lang demowfm selector ng-binding ng-scope" style="display:none;"></div>
+                                        <!-- end ngIf: isCategoryAccessible('wfm') -->
+                                        <!-- ngIf: isCategoryAccessible('qm') -->
+                                        <div data-ng-click="setFilter('qm')" data-ng-if="isCategoryAccessible('qm')" data-ng-class="{active: filter == 'qm'}" lang="qm" en="QM" class="lang selector ng-binding ng-scope"></div>
+                                        <!-- end ngIf: isCategoryAccessible('qm') -->
+                                        <!-- ngIf: isCategoryAccessible('analytics') -->
+                                        <div data-ng-click="setFilter('analytics')" data-ng-if="isCategoryAccessible('analytics')" data-ng-class="{active: filter == 'analytics'}" lang="analytics" en="Analytics" class="lang selector ng-binding ng-scope"></div>
+                                        <!-- end ngIf: isCategoryAccessible('analytics') -->
+                                    </div>
+                                </admin-group-selector>
+                            </div>
+                            <manager-groups class="managerGroups ng-scope">
+                                <div class="manager-groups clearfix">
+                                    <!-- ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+                                    <manager-group class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories">
+                                        <div class="manager-group global ">
+                                            <div  lang="global" en="GLOBAL" class="lang category ng-binding"  style="text-transform:uppercase;"></div>
+                                            <div class="group-content">
+                                                <header class="clearfix">
+                                                    <div class="icon user-config icon-custom-appmgmt-user-settings"></div>
+                                                    <div lang="userConfiguration" en="User Configuration" class="lang group-title ng-binding"></div>
+                                                </header>
+                                                <div lang="userConfigurationDescription" en="Configure users and their access" class="lang group-description ng-binding"></div>
+                                                <ul>
+                                                    <!-- ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.groups" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="groups" en="Groups" class="lang manager-subapp ng-binding" href="admin_groups.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.teams" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="teams" en="Teams" class="lang manager-subapp ng-binding" href="admin_teams.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.users" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="users" en="Users" class="lang manager-subapp ng-binding" href="admin_users.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.roles" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="roles" en="Roles" class="lang manager-subapp ng-binding" href="admin_roles.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.views" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="viewsTitle" en="Views" class="lang manager-subapp ng-binding" href="admin_views.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.mergePeople" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="mergePeople" en="Merge Users" class="lang manager-subapp ng-binding" href="admin_mergePeople.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps 
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.legacyApiAccess" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" class="manager-subapp ng-binding" href="#/admin/legacyApiAccess">Legacy API Access</a>
+                                                    </li>-->
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </manager-group>
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+                                    <manager-group class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories">
+                                        <div class="manager-group global ">
+                                            <div  lang="global" en="GLOBAL" class="lang category ng-binding"  style="text-transform:uppercase;"></div>
+                                            <div class="group-content">
+                                                <header class="clearfix">
+                                                    <div class="icon user-config icon-custom-appmgmt-global-settings"></div>
+                                                    <div lang="administration" en="Administration" class="lang group-title ng-binding"></div>
+                                                </header>
+                                                <div lang="administrationDescription" en="Configure administration settings" class="lang group-description ng-binding"></div>
+                                                <ul>
+                                                    <!-- ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.tenantGlobalSettings" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="globalSettings" en="Global Settings" class="lang manager-subapp ng-binding" href="admin_tenantGlobalSettings.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.networkAccess" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="networkAccess" en="Network Access" class="lang manager-subapp ng-binding" href="admin_networkAccess.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.authenticationConfig" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="authentication" en="Authentication" class="lang manager-subapp ng-binding" href="admin_authenticationConfig.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.passwordPolicy" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="passwordPolicy" en="Password Policy" class="lang manager-subapp ng-binding" href="admin_passwordPolicy.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.downloads" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="downloads" en="Downloads" class="lang manager-subapp ng-binding" href="admin_downloads.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.kpiAdmin" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="kpiLabel" en="Key Performance Indicators (KPIs)" class="lang manager-subapp ng-binding" href="admin_kpiAdmin.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.mobileConfiguration" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="mobileConfiguration" en="Mobile Configuration" class="lang manager-subapp ng-binding" href="admin_mobileConfiguration.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </manager-group>
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+                                    <manager-group class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories">
+                                        <div class="manager-group global ">
+                                            <div  lang="global" en="GLOBAL" class="lang category ng-binding"  style="text-transform:uppercase;"></div>
+                                            <div class="group-content">
+                                                <header class="clearfix">
+                                                    <div class="icon sys-admin icon-custom-appmgmt-database-config"></div>
+                                                    <div lang="systemConfiguration" en="System Configuration" class="lang group-title ng-binding"></div>
+                                                </header>
+                                                <div lang="sysconfigDescription" en="Configure system settings" class="lang group-description ng-binding"></div>
+                                                <ul>
+                                                    <!-- ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.newAcdConfiguration" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="acdConfiguration" en="ACD Configuration" class="lang manager-subapp ng-binding" href="admin_newAcdConfiguration.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.activeDirectoryConfig" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="activeDirectoryConfig" en="Active Directory Configuration" class="lang manager-subapp ng-binding" href="admin_activeDirectoryConfig.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.regionalServerConfiguration" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="regionalGathering" en="Data Server Configuration" class="lang manager-subapp ng-binding" href="admin_regionalServerConfiguration.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.storageProfiles" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="storageProfiles" en="Storage Profiles" class="lang manager-subapp ng-binding" href="admin_storageProfiles.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.externalStorage" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="externalStorage" en="External Storage" class="lang manager-subapp ng-binding" href="admin_externalStorage.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </manager-group>
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+                                    <manager-group class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories">
+                                        <div class="manager-group global ">
+                                            <div  lang="global" en="GLOBAL" class="lang category ng-binding"  style="text-transform:uppercase;"></div>
+                                            <div class="group-content">
+                                                <header class="clearfix">
+                                                    <div class="icon sys-admin icon-custom-appmgmt-database-config"></div>
+                                                    <div lang="performanceManagement" en="Performance Management" class="lang group-title ng-binding"></div>
+                                                </header>
+                                                <div lang="configureGamification" en="Configure Gamification" class="lang group-description ng-binding"></div>
+                                                <ul>
+                                                    <!-- ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.points" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="points" en="Points" class="lang manager-subapp ng-binding" href="admin_points.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.gamificationLevels" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="gamificationLevels" en="Levels" class="lang manager-subapp ng-binding" href="admin_gamificationLevels.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.gamificationPerformanceCategories" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="gamificationPerformanceCategories" en="Performance Categories" class="lang manager-subapp ng-binding" href="admin_gamificationPerformanceCategories.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.gamificationCollectPerformanceData" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="gamificationCollectPerformanceData" en="Collect Performance Data" class="lang manager-subapp ng-binding" href="admin_gamificationCollectPerformanceData.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </manager-group>
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+                                    <manager-group class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories">
+                                        <div class="manager-group global ">
+                                            <div  lang="global" en="GLOBAL" class="lang category ng-binding"  style="text-transform:uppercase;"></div>
+                                            <div class="group-content">
+                                                <header class="clearfix">
+                                                    <div class="icon monitoring icon-custom-appmgmt-system-monitoring"></div>
+                                                    <div lang="monitoring" en="Monitoring" class="lang group-title ng-binding"></div>
+                                                </header>
+                                                <div lang="monitoringDescription" en="Monitor Systems and Configure Notifications" class="lang group-description ng-binding"></div>
+                                                <ul>
+                                                    <!-- ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.agentMonitoring" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="agentMonitoring" en="Agent Monitoring" class="lang manager-subapp ng-binding" href="admin_agentMonitoring.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.audit" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="audit" en="Audit" class="lang manager-subapp ng-binding" href="admin_audit.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.dataServerLogs" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="dataServerLogs" en="Data Server Logs" class="lang manager-subapp ng-binding" href="admin_dataServerLogs.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.desktopMonitoring" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="desktopMonitoring" en="Desktop Monitoring" class="lang manager-subapp ng-binding" href="admin_desktopMonitoring.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.notificationGroup" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="notifications" en="Notifications" class="lang manager-subapp ng-binding" href="admin_notificationGroup.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.bulkContactExportAudit" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="bulkExportAuditTitle" en="Bulk Contact Export Audit" class="lang manager-subapp ng-binding" href="admin_bulkContactExportMonitoring.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.activeDirectorySync" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="activeDirectorySync" en="Active Directory Sync" class="lang manager-subapp ng-binding" href="admin_activeDirectorySync.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.dataServerStatus" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="dataServerStatus" en="Data Server Status" class="lang manager-subapp ng-binding" href="admin_dataServerStatus.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </manager-group>
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories 
+WFM Tiles removed
+-->
+
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+                                    <manager-group class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories">
+                                        <div class="manager-group qm ">
+                                            <div class="category ng-binding">QM</div>
+                                            <div class="group-content">
+                                                <header class="clearfix">
+                                                    <div class="icon sys-admin icon-custom-appmgmt-database-config"></div>
+                                                    <div lang="qmConfiguration" en="QM Configuration" class="lang group-title ng-binding"></div>
+                                                </header>
+                                                <div lang="qualityInfo" en="Configure Quality Management settings" class="lang group-description ng-binding"></div>
+                                                <ul>
+                                                    <!-- ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.qmGlobalSettings" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="globalSettings" en="Global Settings" class="lang manager-subapp ng-binding" href="admin_qmGlobalSettings.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.metadataManager" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="metadataManager" en="Metadata Manager" class="lang manager-subapp ng-binding" href="admin_metadataManager.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.telephonyGroups" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="telephonyGroups" en="Telephony Groups" class="lang manager-subapp ng-binding" href="admin_telephonyGroups.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.telephonyMonitoring" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="telephonyMonitoring" en="Telephony Monitoring" class="lang manager-subapp ng-binding" href="admin_telephonyMonitoring.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.deviceAssociations" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="deviceAssociations" en="Device Associations" class="lang manager-subapp ng-binding" href="admin_deviceAssociations.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.qmEvalFormManager" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="evaluationFormManager" en="Evaluation Form Manager" class="lang manager-subapp ng-binding" href="admin_qmEvalFormManager.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </manager-group>
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+                                    <manager-group class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories">
+                                        <div class="manager-group qm ">
+                                            <div class="category ng-binding">QM</div>
+                                            <div class="group-content">
+                                                <header class="clearfix">
+                                                    <div class="icon qm-config icon-custom-product-recording"></div>
+                                                    <div lang="qmContactFlows" en="QM Contact Flows" class="lang group-title ng-binding"></div>
+                                                </header>
+                                                <div lang="contactFlowsDescription" en="Configure Quality Management Contact options" class="lang group-description ng-binding"></div>
+                                                <ul>
+                                                    <!-- ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.workflowAdmin" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="workflowAdmin" en="Workflow Administration" class="lang manager-subapp ng-binding" href="admin_workflowAdmin.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.QMretention" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="retention" en="Retention" class="lang manager-subapp ng-binding" href="admin_qmRetention.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.archiveConfig" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="archiveConfig" en="Archive Configuration" class="lang manager-subapp ng-binding" href="admin_archiveConfig.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.postCallSurvey" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="postCallSurveyTitle" en="Post Call Survey" class="lang manager-subapp ng-binding" href="admin_postCallSurvey.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.contactQueueClassifier" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="contactGoalAdministration" en="Contact Goal Administration" class="lang manager-subapp ng-binding" href="admin_contactQueueClassifier.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.inclusionExclusionManager" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="inclusionExclusionManager" en="Inclusion/Exclusion" class="lang manager-subapp ng-binding" href="admin_inclusionExclusionManager.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.inclusionExclusionEarlyAccess" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="inclusionExclusionEarlyAccess" en="Inclusion/Exclusion (Early Access)" class="lang manager-subapp ng-binding" href="#/admin/inclusionExclusion"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </manager-group>
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+                                    <manager-group class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories">
+                                        <div class="manager-group analytics ">
+                                            <div style="text-transform:uppercase;" lang="analytics" en="ANALYTICS" class="lang category ng-binding"></div>
+                                            <div class="group-content">
+                                                <header class="clearfix">
+                                                    <div class="icon analytics icon-product-analytics"></div>
+                                                    <div lang="analytics" en="Analytics" class="lang group-title ng-binding"></div>
+                                                </header>
+                                                <div lang="analyticsInfo" en="Configure analytics settings" class="lang group-description ng-binding"></div>
+                                                <ul>
+                                                    <!-- ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.taskManager" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="taskManager" en="Task Manager" class="lang manager-subapp ng-binding" href="admin_taskManager.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.phraseManager" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="phraseManager" en="Phrase Manager" class="lang manager-subapp ng-binding" href="admin_phraseManager.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.desktopManager" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="desktopManager" en="Desktop Manager" class="lang manager-subapp ng-binding" href="admin_desktopManager.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.fieldManager" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="fieldManager" en="Field Manager" class="lang manager-subapp ng-binding" href="admin_fieldManager.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                    <li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                                                        <span class="bullet"></span>
+                                                        <a data-ui-sref="cone.admin.analyticsManager" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" lang="advancedAnalyticsConfiguration" en="Analytics Configuration" class="lang manager-subapp ng-binding" href="admin_analyticsManager.htm"></a>
+                                                    </li>
+                                                    <!-- end ngRepeat: subapp in managerGroup.subapps -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </manager-group>
+                                    <!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+
+								
+<manager-group id="ar" class="managerGroup ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-ng-model="managerGroup" data-ng-repeat="managerGroup in managerGroups | filter:selectedCategories" style="display:none;"><div class="manager-group dataManagement ">
+    <div class="category ng-binding">DATA MANAGEMENT</div>
+    <div class="group-content">
+        <header class="clearfix">
+            <div class="icon data-management icon-product-analytics"></div>
+            <div class="group-title ng-binding">Data Management</div>
+        </header>
+        <div class="group-description ng-binding">Configure Data Management</div>
+        <ul>
+            <!-- ngRepeat: subapp in managerGroup.subapps --><li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                <span class="bullet"></span>
+                <a data-ui-sref="cone.admin.dataTaskManagement" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" class="manager-subapp ng-binding" href="admin-dataTaskManagement.htm">Data Task Management</a>
+            </li><!-- end ngRepeat: subapp in managerGroup.subapps --><!--li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                <span class="bullet"></span>
+                <a data-ui-sref="cone.admin.udmConnectorManagement" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" class="manager-subapp ng-binding" href="admin-udm.htm">Unified Data Mart Administration</a>
+            </li><!-- end ngRepeat: subapp in managerGroup.subapps --><!--li data-ng-repeat="subapp in managerGroup.subapps" data-ng-hide="" class="ng-scope">
+                <span class="bullet"></span>
+                <a data-ui-sref="cone.admin.rtConnectorManagement" ng-click="subapp.noFunctionality === true ? showNoFunctionalityToast($event) : null" class="manager-subapp ng-binding" href="admin-rt.htm">Real-Time (RT) Job Management</a>
+            </li--><!-- end ngRepeat: subapp in managerGroup.subapps -->
+        </ul>
+    </div>
+</div>
+</manager-group>								
+<!-- end ngRepeat: managerGroup in managerGroups | filter:selectedCategories -->
+									
+									
+								</div>
+                            </manager-groups>
+                        </div>
+                    </div>
+                    <cone-footer one-liner="true" class="ng-isolate-scope">
+                        <footer>
+                            <!-- ngIf: $ctrl.showDbUpgrade && $ctrl.systemProperties.dbUpdateRequired -->
+                            <div style="width: 100%;">
+                                <div ng-class="{'right': $ctrl.oneLiner}" class="ng-binding right">11.5.28.65 </div>
+                                <div class="ng-binding">© 2008-2024 All rights reserved.</div>
+                                <!-- ngIf: !$ctrl.oneLiner -->
+                            </div>
+                        </footer>
+                    </cone-footer>
+                </div>
+            </div>
+        </div>
+    </body>
+	
+<script>
+var classic= window.localStorage.getItem('classic')?window.localStorage.getItem('classic'):0;
+var ar= window.localStorage.getItem('ar')?window.localStorage.getItem('ar'):1;
+var pc= window.localStorage.getItem('pc')?window.localStorage.getItem('pc'):1;
+
+if(classic==1) {
+	$('.demowfm').show();
+}
+if(ar>0) {
+	$("#ar").show()
+}
+	
+	
+	
+	
+$(document).ready( langloop );
+function langloop() {
+	if(typeof(lang_x)!='object') {
+		setTimeout(langloop,1);
+		return;
+	}
+	$(".lang").each(function() {
+		word = lang_x[$(this).attr("lang")]?lang_x[$(this).attr("lang")]:$(this).attr("en");
+		if(word.indexOf("{{")>-1) word=word.substring(0,word.indexOf("{{"))
+		$(this).text(word);	
+	})
+	$(".langvalue").each(function() {
+		word = lang_x[$(this).attr("lang")]?lang_x[$(this).attr("lang")]:$(this).attr("en");
+		if(word.indexOf("{{")>-1) word=word.substring(0,word.indexOf("{{"))
+		$(this).val( word );	
+	})	
+	$(".langholder").each(function() {
+		word = lang_x[$(this).attr("lang")]?lang_x[$(this).attr("lang")]:$(this).attr("en");
+		if(word.indexOf("{{")>-1) word=word.substring(0,word.indexOf("{{"))
+		$(this).attr("placeholder", word );	
+	})	
+}
+	
+</script>
+
+</html>

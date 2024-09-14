@@ -1,0 +1,187 @@
+
+.i-list {
+	padding-bottom: 10px;
+}
+
+.i-listHeaderRow {
+	color: #ffffff;
+	font-size: 10px;
+	background: #ABA9A7; /* G4 */
+	height: 15px;
+}
+
+.i-hiddenHeaderRow {
+	display: none;
+}
+
+.i-selectedListHeader {
+	background: #888686; /* G5 */
+	color: #ffffff;
+	padding-right: 3px;
+}
+
+.i-listHeaderRow .gwt-Label {
+	font-size: 11px;
+	color: #ffffff;
+	border-left-color: white;
+	border-left-style: solid;
+	border-left-width: 1px;
+    padding: 0 0 0 3px;
+}
+
+.i-listItemTitle { /* content title */
+	color: #262626; /* G7 */
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.i-listItemTitle:hover {
+	color: #0080FF;
+}
+
+.i-groupListItemTitle .gwt-Label { /* 17 Group head-mini */
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+
+.i-listItemRow-nested .i-listItemTitle-nested .gwt-Label {
+	color: #414042; /* G7 */
+	font-weight: bold;
+	font-size: 11px;
+	vertical-align: top;
+}
+
+.i-activityListItem table .i-listItemFooter {
+	/* Description */
+	color: #888686; /* G5 */
+	font-size: 12px;
+	font-weight: normal;
+	padding: 2px 0 1px 0;
+}
+
+.i-listMessage { /* Content Title Light */
+	color: #414042; /* G7 */
+	font-size: 13px;
+	font-weight: normal;
+	padding: 5px;
+}
+
+.i-listItemLink {
+	font-size: 100%;
+	font-weight: bold;
+	color: #6b6d82;
+	cursor: pointer;
+}
+
+.i-listItemLink:hover {
+	text-decoration: underline;
+}
+
+.i-imageThumbnail {
+	padding: 4px;
+	margin: 0 12px 0 12px;
+}
+
+.i-imageThumbnail-small {
+	padding: 2px;
+	margin-right: 2px;
+}
+
+.i-fixImageThumbnail {
+	width: 38px;
+	height: 38px;
+	margin: 5px 5px 5px 5px;
+}
+
+.i-transparentImageThumbnail {
+	padding: 4px;
+	margin: 0 12px 0 12px;
+}
+
+.i-errorThumbnail {
+	border: 1px solid red;
+	background: white;
+	padding: 4px;
+	margin: 0 12px 0 12px;
+}
+
+.i-listError {
+	font-size: 90%;
+	color: red;
+	font-weight: bold;
+}
+
+
+
+
+.i-listItemRow { /* Content Title */
+	height: 52px;
+}
+
+.i-listItemRow:hover {
+	background: #e6e6e6;
+}
+
+.i-listItemRowHover tr:hover {
+	background: #e6e6e6;
+}
+
+.i-listItemRow .gwt-Label { /* Content Title */
+	color: #414042; /* G7 */
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.i-listItemRow .i-listItemTitle {
+	color: #000;
+	font-size: 18px;
+}
+
+.i-listItemRow .i-listItemTitle:hover {
+	color: #0080FF;
+}
+
+.i-listItemRowLink {
+	color: #0080cc;
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+.i-listItemRowLink:hover {
+	color: #0080ff;
+	text-decoration: underline;
+}
+
+.i-listItemRow-nested {
+	font-size: 13px;
+	background: white;
+	height: 30px;
+	vertical-align: top;
+}
+
+.i-listItemRow-nested .gwt-Label {
+	font-weight: normal;
+}
+
+.i-listItem {
+	border-bottom: 1px solid #d6d3c6;
+	padding-left: 3px;
+}
+
+/* search list uses i-link */
+
+.i-link {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.i-link:hover {
+	text-decoration: underline;
+}
+
+.i-link:visited {
+	text-decoration: none;
+}

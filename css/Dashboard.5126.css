@@ -1,0 +1,520 @@
+.i-DashboardList {
+	width: 100%;
+}
+
+.i-DashboardList .header {
+	font-size: 21px;
+	font-weight: bold;
+	padding: 10px 25px;
+}
+
+.i-DashboardList .i-optionButton-small {
+	float: left;
+}
+
+.i-DefaultDashboardEditor {
+	background: #ffffff;
+	padding: 0;
+	width: 100%;
+}
+
+div.i-defaultEditorLoadingWidget {
+	min-width:950px;
+	padding:40px 0 0 0;
+	text-align:center;	
+	width: 950px;
+	margin:auto;
+}
+
+div.i-defaultEditorLoadingWidget IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 	
+}
+
+div.i-defaultEditorLoadingWidget .gwt-Label {
+	color:#333;	
+	font-size:18px;
+	font-weigth:bold;
+	text-align: center;
+	width: 100%; 	
+}
+
+.i-DefaultDashboardEditor .gwt-TextBox-error,
+.i-DefaultDashboardEditor .gwt-TextArea-error {
+	border: 3px solid #B53433;
+}
+
+.i-DefaultDashboardEditor .errorPanel {
+   padding-top:5px;
+   width: 300px;
+}
+.i-DefaultDashboardEditor .errorPanel p {
+   color: #A51C21;
+   font-weight: bold;
+   font-size: 13px;
+   line-height: 120%;
+   margin:0;
+}
+
+.i-DefaultDashboardEditor .gwt-Label {
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.i-DefaultDashboardEditor .topPanel {
+	background: 0;
+	border:0;	
+	min-height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 950px;
+	padding: 0 10px 0 20px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.i-DefaultDashboardEditor .titleDescPanel {
+	min-height: 150px;
+	float: left;
+	width: 720px;
+	white-space: nowrap;
+}
+
+.i-DefaultDashboardEditor .buttonPanel {
+	float: left;
+	min-width: 100px;
+	padding: 65px 0 0 5%;
+}
+
+.i-DefaultDashboardEditor .gwt-TextBox.title {
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+	min-height: 24px;
+	width: 700px;
+}
+ 
+.i-DefaultDashboardEditor .gwt-TextArea.description {
+	color: #333;
+	font-size:12px;	
+	font-weight: normal;
+	height: 55px;
+	overflow: hidden;
+	width: 700px;
+}
+
+
+.buttonPanel .cancelPanel {
+	float: right;
+}
+
+.buttonPanel .savePanel {
+	float: right;
+}
+
+.i-DefaultDashboardEditorLayout {
+	width: 100%;
+}
+
+/* expression used as IE workaround;
+   problem was spacing being inherited by children,
+   consider moving style to a named table instance or
+   other alternatives 
+*/
+table.i-DefaultDashboardEditorLayout {
+	border-collapse: inherit;
+	border-spacing: 20px; 
+	*border-collapse: expression('inherit', cellSpacing = '20px');
+	width: 950px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+.i-DefaultDashboardEditorLayout tr {
+	vertical-align: top;
+}
+
+.i-ReportSettingsEditor {
+	background-color: #f0f0f0;
+	border: 1px solid #7F7F7F;
+	margin: 8px;
+	padding: 0;
+}
+
+.i-DefaultDashboardEditorLayout .cell00 {
+	background-color: #ffffff;
+	border: 1px solid #7F7F7F;
+	padding: 0;
+	width: 450px;
+}
+
+.i-DefaultDashboardEditorLayout .cell01 {
+	background-color: #ffffff;
+	border: 1px solid #7F7F7F;
+	padding: 0;
+	width: 450px;
+}
+
+.i-DefaultDashboardEditorLayout .cell10 {
+	background-color: #ffffff;
+	border: 1px solid #7F7F7F;
+	padding: 0;
+	width: 450px;
+}
+
+.i-DefaultDashboardEditorLayout .cell11 {
+	background-color: #ffffff;
+	border: 1px solid #7F7F7F;
+	padding: 0;
+	width: 450px;
+}
+
+.i-ReportSettingsEditor .header {
+	background-color: #ccc;
+	border-bottom: 1px solid #7F7F7F;
+	height: 30px;
+	padding: 0 10px 0 0;
+}
+
+.i-ReportSettingsEditor .header .gwt-Label.title {
+	float: left;
+	font-size: 16px;
+	padding: 5px 0 5px 20px;
+	width: 150px;
+}
+
+.i-ReportSettingsEditor .header .showReport {
+	float: right;
+	padding-top: 5px;
+	width: 80px;
+}
+
+.i-ReportSettingsEditor .options {
+	padding: 5px 0 10px 0;
+}
+
+.i-ReportSettingsEditor .gwt-CheckBox.summary {
+	font-weight: bold;
+	margin-left: 10px;
+	vertical-align: center;
+}
+
+.i-DefaultReportSelector {
+	margin-top: 7px;
+	width: 100%;
+}
+
+.i-DefaultReportSelector .gwt-Image, .i-DefaultReportSelector .gwt-Label {
+	color: black;
+	font-weight: normal;
+	padding: 0;
+}
+
+.i-DefaultReportSelector .i-subtleInfoText {
+	color: #cfccc9; /* G3 */
+	font-style: italic;
+}
+
+.i-DefaultReportSelector .widgets {
+	margin-left: 40px;
+}
+
+.i-DefaultReportSelector .gwt-TextBox, .i-DefaultReportSelector .gwt-ListBox {
+	font-size: 12px;
+	width: 250px;
+}
+
+.i-DefaultReportSelector .list {
+	border: 1px solid #878787;
+	margin: 7px 7px 1px 7px;
+	width: 90%;
+	/* width: 429px; */
+}
+
+.i-DefaultReportSelector .list .gwt-Label {
+	color: #404040;
+	margin: 2px 5px;
+	padding: 0;
+}
+
+.i-DefaultReportSelector .list .headerRow {
+	background-image: url(images/headerRow.png);
+	width: 100%;
+}
+
+.i-DefaultReportSelector .list .headerRow .gwt-Label {
+	color: white;
+}
+
+.i-DefaultReportSelector .list .headerRow .nameCol {
+	border-right: 1px solid #878787;
+}
+
+.i-DefaultReportSelector .list .nameCol {
+	width: 60%;
+}
+
+.i-DefaultReportSelector .list .content {
+	background: white;
+	cursor: default;
+	/* height: 196px; */
+}
+
+.i-DefaultReportSelector .list .headerRow,
+.i-DefaultReportSelector .list table {
+	width: 100%
+}
+
+.i-DefaultReportSelector .list .evenRow {
+	background: #eaeaea;
+}
+
+.i-DefaultReportSelector .list .highlight {
+	background: #d7eeec;
+}
+
+.i-DefaultDashboard {
+	background: #ffffff;
+	padding: 0;
+	width: 100%;
+}
+
+.i-DefaultDashboard .gwt-Label {
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.i-DefaultDashboard .topPanel {
+	background: 0;
+	border: 0;
+	min-height: 150px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1024px;
+	padding: 5px 10px 0 20px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.i-DefaultDashboard .titleDescPanel {
+	height: 80px;
+	float: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 720px;
+}
+
+.i-DefaultDashboard .buttonPanel {
+	float: left;
+	min-width: 180px;
+	padding: 25px 0 0 10px;
+}
+
+.i-DefaultDashboard .titleDescPanel .gwt-HTML.title {
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+	width: 700px;
+}
+
+.i-ReportView .gwt-HTML.title {
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.i-DefaultDashboard .gwt-HTML.description {
+	color: #333;
+	font-size:12px;
+	font-weight: normal;
+	height: 55px;
+	overflow:hidden;
+	white-space:normal;
+	width: 700px;
+}
+
+.buttonPanel .editPanel {
+	float: left;
+}
+
+.buttonPanel .sharePanel {
+	float:left;
+}
+
+.buttonPanel .sharePanel table.i-buttonText {
+	padding:0;
+}
+
+.buttonPanel .sharePanel div.gwt-Label {
+	font-size: 11px;
+	font-weight: normal;
+	padding:0;
+}
+
+.i-DashboardReportSummary .summaryTitle { /* Sub Content Title */
+	color: #686868;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.i-DashboardReportSummary .summaryText { /* Small data text */
+	color: #252525;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 10px 0 10px;
+}
+
+.i-DashboardReportPanel {
+	border-top: 1px solid #7F7F7F;
+	background-color: #ffffff;
+	margin: 0;
+	/* min-height: 320px; */
+	padding: 5px 0 25px 0;
+	text-align: center;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel {
+	background-color: #f5f5f5;
+	margin: 20px 20px 0 20px;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel .t {
+	background: url(/images/myquestion_dot.gif) 0 0 repeat-x;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel .b {
+	background: url(/images/myquestion_dot.gif) 0 100% repeat-x;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel .l {
+	background: url(/images/myquestion_dot.gif) 0 0 repeat-y;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel .r {
+	background: url(/images/myquestion_dot.gif) 100% 0 repeat-y;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel .bl {
+	background: url(/images/myquestion_bl.gif) 0 100% no-repeat;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel .br {
+	background: url(/images/myquestion_br.gif) 100% 100% no-repeat;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel .tl {
+	background: url(/images/myquestion_tl.gif) 0 0 no-repeat;
+}
+
+.i-DashboardReportPanel .i-RoundedCssPanel .tr {
+	background: url(/images/myquestion_tr.gif) 100% 0 no-repeat;
+	padding: 7px;
+}
+
+.i-DefaultDashboardLayout {
+}
+
+/* expression used as IE workaround;
+   problem was spacing being inherited by children,
+   consider moving style to a named table instance or
+   other alternatives 
+*/
+.i-DefaultDashboardLayout table.layoutTable {
+	border-collapse: inherit;
+	border-spacing: 20px; 
+	*border-collapse: expression('inherit', cellSpacing = '20px');
+	width: 960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.i-DefaultDashboardLayout tr {
+	vertical-align: top;
+}
+
+.i-DefaultDashboardLayout .cellSmall {
+	background-color: #ffffff;
+	border: 1px solid #7F7F7F;
+	padding: 0;
+	width: 450px;
+}
+
+.i-DefaultDashboardLayout .cellLarge {
+	background-color: #ffffff;
+	border: 1px solid #7F7F7F;
+	padding: 0;
+	width: 920px;
+}
+
+.i-ReportView {
+	background-color: #ffffff;
+	border: 1px solid #7F7F7F;
+	margin: 8px;
+}
+
+.i-ReportView .titlePanel {
+	background-color: #ccc;
+	display: block;
+	height: 25px;
+	vertical-align: middle;
+}
+
+.i-ReportView .titlePanel .title {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 15px;
+	white-space: nowrap;
+	width: 70%;
+}
+
+.i-ReportView .titlePanel .gwt-HTML.error {
+   color: #A51C21;
+}
+
+.i-ReportView .titlePanel .i-ViewReportButton {
+	background: url(/images/icon_viewReport.png) center left no-repeat;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333;
+	float: right;
+	margin: 2px 0 0 0;
+	padding: 2px 10px 0 18px;
+}
+
+.i-ReportView .titlePanel .i-ViewReportButton:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.i-DashboardList .icon {
+	float: right;
+	margin-right: 16px;
+}
+
+.i-DefaultDashboard div.i-blankVisualization  {
+	margin: auto;
+	padding: 50px 0 0.5em 0; 
+}
+
+.i-DefaultDashboardEditorLayout div.i-blankVisualization {
+	background-color:#FFF;
+	border-top: 1px solid #7F7F7F;
+	height: 259px;
+	margin: 0;
+	padding:50px 0 0 0; 
+	text-align:center;	
+}
+
+.i-DefaultDashboardEditorLayout div.i-blankVisualization.loading {
+	border:0;
+}
+

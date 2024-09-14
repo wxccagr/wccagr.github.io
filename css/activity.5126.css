@@ -1,0 +1,81 @@
+.i-activityListItem table .i-listItemFooter {
+	/* Description */
+	color: #888686; /* G5 */
+	font-size: 12px;
+	font-weight: normal;
+	padding: 2px 0 1px 0;
+}
+
+
+.i-activityListItem {
+	border-top: 1px solid #d6d3c6;
+}
+
+.i-activityListItemRow { /* Content Title */
+	color: #414042; /* G7 */
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.i-activityListItemRow:hover {
+	background: #e6e6e6;
+}
+
+.i-activityListUserActivity .gwt-label {
+	font-size: 13px;
+	color: #8B6D46;
+}
+
+.i-activityListUserActivityCell {
+	border: 1px solid #d6d3c6;
+	cursor: pointer;
+}
+
+.i-activityListUserActivityCell .gwt-Label {
+	font-weight: normal;
+	padding: 0;
+}
+
+.i-activityListSeeAll { /* Secondary Action */
+	color: #0080cc; /* Link Blu */
+	font-size: 12px;
+	padding-right: 0px;
+	padding-bottom: 7px;
+	padding-left: 5px;
+	padding-top: 7px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.i-activityListSeeAll:hover {
+	color: #0080ff;
+	text-decoration: underline;
+}
+
+.i-activityListPanel {
+	background-color: #f4f4f4;
+	border: 1px solid #DBD6CC;
+	text-decoration: none;
+	width: 100%;
+}
+
+.i-activityListPanel .i-activityListPanelHeader {
+	background: #ccc;
+	height: 32px;
+	white-space: nowrap;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.i-activityListPanel .i-activityListPanelHeader .heading {
+	/* Caps Head */
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 7px 0;
+}
+
+
+.i-hiddenHeaderRow {
+	display: none;
+}

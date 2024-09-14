@@ -1,0 +1,426 @@
+/************************************************
+Group List
+************************************************/
+.i-groupList {
+	padding: 0px;
+	overflow: hidden;
+}
+
+.i-groupList .i-listMessage {
+	color: black;
+}
+
+.i-groupListGadget {
+	width: 100%;
+}
+
+.i-groupListGadget .filterBar {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.i-groupListItemRow {
+	font-size: 85%;
+	height: 52px;
+}
+
+.i-groupListImage {
+	padding: 0 10px 0 10px;
+}
+
+.i-groupHeaderPanel {
+	background: #e9e5e2;
+	padding: 0 10px 10px 10px;
+}
+
+.i-groupHeader {
+	height: 70px;
+}
+
+.i-groupName {
+	color: white;
+	font-size: large;
+}
+
+.i-groupList-activityList td {
+	padding: 0px;
+}
+
+.i-groupList-groupDesc { /* 27 small data text*/
+	font-size: 11px;
+	font-color: #414042; /* G7 */
+	width: 38em;
+	max-height: 3em;
+}
+
+/* 27 small data text*/
+.i-groupList-lastUpdate,.i-groupList-questions,.i-groupList-members {
+	font-size: 11px;
+	font-color: #414042; /* G7 */
+}
+
+.i-GroupActivity {
+	width: 100%;
+	color: black;
+	margin: 0px 0px 10px 0px;
+	border: solid thin;
+	border-width: 0px 1px 1px 1px;
+	border-color: #e8e5e1; /* G2 */
+}
+
+.i-GroupActivity .gwt-Label {
+	font-weight: normal;
+}
+
+.i-GroupActivity .i-listItemRow-nested td {
+	padding-right: 10px;
+}
+
+.i-GroupActivity-content { /* content title light 31 */
+	font-size: 13px;
+	color: #414042; /* G7 */
+	width: 66em;
+	max-height: 2.5em;
+}
+
+.i-GroupActivity-listHeaderRow { /* 29 sort head-pos */
+	height: 15px;
+}
+
+.i-GroupActivity-listHeaderRow .gwt-Label {
+	font-size: 10px;
+	color: #414042; /* G7 */
+	padding: 0;
+}
+
+.i-GroupActivity .i-GroupActivitySeeAll { /* 16 Secondary action */
+	margin: 5px 5px 5px 13px;
+}
+
+.i-GroupActivity .i-GroupActivitySeeAll .gwt-Label,.i-GroupActivity .i-GroupActivitySeeAll .gwt-Hyperlink
+	{
+	color: #3d53b3; /* light blue */
+	font-size: 11px;
+	padding: 0;
+}
+
+.i-GroupActivity-userName { /* 27 small data text*/
+	font-size: 10px;
+	color: #414042; /* G7 */
+}
+
+.i-GroupActivity-lastUpdate { /* 27 small data text*/
+	font-size: 10px;
+	color: #414042; /* G7 */
+}
+
+.i-GroupActivity .gwt-Hyperlink {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.i-group-color-0 {
+	background: #646364;
+}  /* metal */
+.i-group-color-1 {
+	background: #C4BA6E;
+}  /* gold */
+.i-group-color-2 {
+	background: #B09D82;
+}  /* suede  */
+.i-group-color-3 {
+	background: #753835;
+}  /* cherry */
+.i-group-color-4 {
+	background: #C48355;
+}  /* peach */
+.i-group-color-5 {
+	background: #E3A534;
+}  /* orange */
+.i-group-color-6 {
+	background: #789974;
+}  /* olive */
+.i-group-color-7 {
+	background: #3F5366;
+}  /* jeans */
+.i-group-color-8 {
+	background: #66A6A4;
+}  /* ocean */
+.i-group-color-null {
+	background: #8B6091;
+}
+
+.i-group-color-secondary-0 {
+	background: #B2B1B2; /*#646364*/
+}  /* metal */
+.i-group-color-secondary-1 {
+	background: #E2DDB7; /*C4BA6E*/
+}  /* gold */
+.i-group-color-secondary-2 {
+	background: #D8CEC1; /*B09D82*/
+}  /* suede  */
+.i-group-color-secondary-3 {
+	background: #BA9C9A; /*753835*/
+}  /* cherry */
+.i-group-color-secondary-4 {
+	background: #E2C1AA; /*C48355*/
+}  /* peach */
+.i-group-color-secondary-5 {
+	background: #F1D29A; /*E3A534*/
+}  /* orange */
+.i-group-color-secondary-6 {
+	background: #BCCCBA; /*789974*/
+}  /* olive */
+.i-group-color-secondary-7 {
+	background: #9FA9B3; /*3F5366*/
+}  /* jeans */
+.i-group-color-secondary-8 {
+	background: #B3D3D2; /*66A6A4*/
+}  /* ocean */
+.i-group-color-secondary-null {
+	background: #8B6091;
+}
+
+.i-relative {
+	position: relative;
+}
+
+.i-joinButton {
+	position: absolute;
+	top: -10px;
+}
+
+/*************************************************
+Group Overview, Group Editor
+*************************************************/
+.i-groupOverviewTable {
+	position: relative;
+	padding: 10px;
+}
+
+.i-groupOverviewTable .i-DisclosurePanelHeader {
+	background: #ccc;
+}
+.i-groupOverviewTable .i-DisclosurePanelHeader .heading {
+	color:black;
+}
+
+.i-groupOverviewTable .i-DisclosurePanelContent {
+	background-color: #f4f4f4;
+}
+
+
+.i-grp-wz-1 {
+	background: #78BF6F url('images/wiz-group-dm.gif') 5px 0 no-repeat;
+	border-left: 1px solid #DAE6F2;
+	padding: 5px 10px 8px 60px;
+	cursor: pointer;
+	margin: 0 0 15px 0;
+	white-space: nowrap;
+}
+
+.i-grp-wz-2 {
+	background: #699BCC url('images/wiz-group-quest.gif') 5px 0 no-repeat;
+	border-left: 1px solid #DAE6F2;
+	padding: 5px 10px 8px 60px;
+	cursor: pointer;
+}
+
+.i-grp-wz-hdr1,.i-grp-wz-hdr2 {
+	color: #fff;
+	font-size: 17px;
+	padding: 0 0 0 15px;
+}
+
+.i-grp-wz-hdr1 {
+	background: url('images/arrow-gr1.gif') 0 7px no-repeat;
+}
+
+.i-grp-wz-hdr2 {
+	background: url('images/arrow-gr2.gif') 0 7px no-repeat;
+}
+
+.i-grp-dashed1 {
+	border-bottom: 1px dashed #96D18D;
+	height: 1px;
+	padding-top: 5px;
+}
+
+.i-grp-dashed2 {
+	border-bottom: 1px dashed #89B4DE;
+	height: 1px;
+	padding-top: 5px;
+}
+
+/**************************************************
+Group Creation / Editing
+**************************************************/
+.i-groupEditor {
+	
+}
+
+.i-groupEditor .i-listBox {
+	height: 13px;
+}
+
+.i-create-group-footer {
+	padding: 20px;
+}
+
+.i-create-group-footer1 {
+	background-color: #646364;
+}
+
+.i-create-group {
+	font-size: 11px;
+	color: #646364;
+}
+
+.i-create-group2 {
+	font-size: 16px;
+	color: #646364;
+}
+
+.i-create-group-header {
+	font-size: 21px;
+	color: #646364;
+	padding: 20px 0 0 20px;
+	height: 35px;
+	font-weight: bold;
+}
+
+.i-create-group-panel-L {
+	margin: 10px;
+	padding: 10px;
+}
+
+.i-create-group-panel-M {
+	margin: 0px;
+	padding: 10px;
+}
+
+.i-create-group-panel-R {
+	margin: 0px;
+	padding: 10px;
+}
+
+.i-noborder {
+	border: 0px;
+}
+
+.i-create-group-label,.i-create-group-label-err {
+	font-size: 12px;
+	margin: 15px 0 5px 0;
+}
+
+.i-create-group-label {
+	color: #646364;
+	font-weight: normal;
+}
+
+.i-create-group-input {
+	color: #646364;
+	height: 20px;
+}
+
+.i-create-group-input-off {
+	color: #cfccc9; /* G3 */
+	height: 20px;
+	font-size: smaller;
+	font-style: italic;
+}
+
+.i-create-group-button {
+	margin: 5px;
+}
+
+.i-create-group-privacy-bg {
+	background: #78C06F; /* green fill */
+	border: 0px;
+	color: white;
+}
+
+.i-create-group-privacy-bg2 {
+	background: #E3A534; /* orange fill */
+	border: 0px;
+	color: white;
+}
+
+.i-create-group-privacy-1 {
+	color: white;
+	font-size: 17px;
+	padding: 0 10px 10px 10px;
+}
+
+.i-create-group-privacy-2 {
+	color: white;
+	font-size: 14px;
+	padding: 0px 10px;
+}
+
+.i-dashed-separator-vertical {
+	border-left: 1px dashed #ccc;
+}
+
+.i-create-group-palette {
+	border: 1px solid #EFE5CE;
+}
+
+/**************************************************
+Group Members / Invitation
+**************************************************/
+.i-InvitationListPanel {
+	border: 0px solid #454d50;
+	background: white;
+	margin: 0px 0px 0px 0px;
+}
+
+.i-InvitationListPanel .header {
+	background: #5c5344;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 0 0 10px;
+}
+
+.i-MemberListPanel {
+	border: 0px solid #454d50;
+	background: white;
+	margin-top: 8px;
+}
+
+.i-MemberListPanel .header {
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.i-MemberListPanel .header .gwt-Label {
+	font-size: 13px;
+	background: #5c5344;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 0 0 10px;
+}
+
+/**************************************************
+Group Discussions
+**************************************************/
+.i-create-topic-header {
+	font-size: 21px;
+	color: #646364;
+	padding: 20px 0 0 10px;
+	height: 35px;
+	font-weight: bold;
+}
+
+.i-topic-edit-footer {
+	background-color: #646364;
+	margin: 0;
+}
+
+.i-create-topic-content {
+	padding-left:30px;
+	width:450px;
+}

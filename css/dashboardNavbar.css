@@ -1,0 +1,67 @@
+.navbarSelect {
+  height: 30px;
+  width: 40px;
+  flex: 0 1 auto;
+}
+
+.buttonContainer {
+  margin-right: 2px;
+  margin-left: 2px;
+  flex: 0 1 auto;
+  min-width: 80px;
+}
+
+.nameContainer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: initial;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.tooltipContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+}
+
+.detailName {
+  margin-right: 0.5em;
+}
+
+.homepage {
+  margin-top: 1em;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
+
+.homepageLabel {
+  margin-left: 0.5em;
+  padding-bottom: 0.1em;
+}
+
+.homepageLink {
+  cursor: pointer;
+  margin-left: 0.5em;
+  padding-bottom: 0.1em;
+}
+
+.homepageLink:hover {
+  text-decoration: underline;
+}

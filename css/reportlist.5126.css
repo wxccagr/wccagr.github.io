@@ -1,0 +1,33 @@
+
+.i-myReportList {
+	width:100%;
+}
+
+.i-groupReportList {
+	width:100%;
+}
+
+.i-questions {
+	background-color: white;
+}
+
+.i-questionListHeader {
+	height: 35px;
+}
+
+.i-questionListHeaderLbl { /* Sub Content Title */
+	color: #414042; /* G7 */
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+.i-imageThumbnail {
+	padding: 4px;
+	margin: 0 12px 0 12px;
+}
+
+.i-reportListPagerPanel {
+	padding:5px 5px 0 0;
+	width:100%;
+}

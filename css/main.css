@@ -1,0 +1,278 @@
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #333;
+	background-color: #fff;
+}
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+a {
+	color: #055472;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #036ed0;
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.container:before,
+.container:after {
+	content: ' ';
+	display: table;
+}
+.container:after {
+	clear: both;
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+.row {
+	margin-left: -16px;
+	margin-right: -16px;
+	padding-right: 16px;
+}
+.row:before,
+.row:after {
+	content: ' ';
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.col-md-3,
+.col-md-12 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 16px;
+}
+@media (min-width: 340px) {
+	.col-md-3 {
+		width: 50%;
+		float: left;
+	}
+}
+@media (min-width: 992px) {
+	.col-md-3 {
+		width: 25%;
+	}
+}
+.pull-right {
+	float: right;
+}
+
+h1 {
+	color: transparent;
+	height: 48px;
+	background-image: url(../images/Calabrio-WhiteOnBlack.svg);
+	background-color: #a6182d;
+	background-position: left center;
+	background-repeat: no-repeat;
+/*	background-size: contain; */
+	margin-top: 0;
+	margin-bottom: 32px;
+}
+
+.client-applications {
+	margin-bottom: 32px;
+}
+.block {
+	height: 140px;
+	color: #fff;
+	padding: 16px;
+	margin-bottom: 16px;
+	display: block;
+	border-radius: 5px;
+}
+.block:hover,
+.block:focus {
+	color: #fff;
+}
+.block:hover:after,
+.block:focus:after {
+	opacity: 0.5;
+}
+.block span {
+	font-size: 24px;
+	margin: 0;
+	max-width: 130px;
+	line-height: 1.1em;
+	display: block;
+}
+.block:after {
+	transition: all 0.5s ease;
+	content: '';
+	position: absolute;
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	background: bottom right / auto 75% no-repeat;
+}
+@media (min-width: 455px) {
+	.block {
+		height: 250px;
+	}
+	.block::after {
+		background-size: auto;
+	}
+	.block:hover:after,
+	.block:focus:after {
+		opacity: 1;
+	}
+	.block span {
+		font-size: 28px;
+	}
+}
+.block.blue {
+	background: #055472;
+}
+.block.blue:after {
+	background-image: url('../images/agents.png');
+}
+
+.block.black {
+	background: #222;
+}
+.block.black:after {
+	background-image: url('../images/agents.png');
+}
+
+.block.red {
+	background: #a6182d;
+}
+
+.block.redphone{
+	background: #a6182d;
+}
+
+.block.red:after {
+	background-image: url('../images/leaders.png');
+}
+
+.block.redphone:after {
+	background-image: url('../images/phone.png');
+}
+
+.block.green {
+	background: #03665c;
+}
+.block.green:after {
+	background-image: url('../images/leaders.png');
+}
+.block.pink {
+	background: #ea5044;
+}
+.block.pink:after {
+	background-image: url('../images/real-time.png');
+}
+.block.orange {
+	background: #fe621d;
+}
+.block.orange:after {
+	background-image: url('../images/resource.png');
+}
+
+.block.redbot {
+	background: #a6182d;
+}
+.block.redbot:after {
+	background-image: url('../images/bot.png');
+}
+
+.block.grey {
+	background: #888;
+}
+.block.grey:after {
+	background-image: url('../images/resource.png');
+}
+
+.block.update {
+	background: #888;
+}
+.block.update:after {
+	background-image: url('../images/update.png');
+}
+
+.tools-services {
+	list-style: none;
+	margin: 0;
+	margin-bottom: 32px;
+	padding: 0;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.tools-services li {
+	display: block;
+	font-size: 16px;
+	margin: 0 8px 16px;
+}
+.tools-services li a {
+	display: inline-flex;
+	align-items: center;
+}
+.tools-services li a::before {
+	content: '';
+	width: 2em;
+	min-width: 2em;
+	height: 2em;
+	margin-right: 8px;
+	background: center / contain no-repeat;
+}
+.tools-services li a:hover::before {
+	filter: brightness(1.05);
+}
+.tools-services li.sdk-service a::before {
+	background-image: url('../images/sdk-service.svg');
+}
+.tools-services li.rta-service a::before {
+	background-image: url('../images/rta-service.svg');
+}
+@media (min-width: 455px) {
+	.tools-services {
+		justify-content: flex-end;
+	}
+	.tools-services li {
+		margin: 0;
+		margin-left: 16px;
+		font-size: 20px;
+	}
+}

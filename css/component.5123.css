@@ -1,0 +1,761 @@
+.i-linkPrefix {
+	padding-left: 10px;
+}
+
+.i-bold {
+	font-weight: bold;
+}
+
+.i-button {
+	cursor: default;
+}
+
+.i-buttonText,.i-buttonText .gwt-Label {
+	/* Primary Button */
+	font-weight: normal;
+	font-size: 11px;
+	color: #333;
+	cursor: default;
+}
+
+.i-buttonLeft {
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
+.i-buttonMiddle {
+	background-position: top left;
+	background-repeat: repeat-x;
+	padding: 0 4px 0 4px;
+	height: 21px;
+}
+
+.i-buttonRight {
+	background-position: top right;
+	background-repeat: no-repeat;
+	padding-right: 5px;
+}
+
+/* when inside a shadow popup IE cuts off the right button part due to padding ?! */
+.i-menuPopup-shadow  .i-buttonLeft {
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+
+.i-menuPopup-shadow  .i-buttonMiddle {
+	margin: 0 4px;
+	padding: 0;
+}
+
+.i-menuPopup-shadow  .i-buttonRight {
+	padding: 0;
+	margin: 0 5px 0 0;
+}
+
+/*
+@def stytch-dark-grey #808285;
+@def stytch-medium-grey #9da3ac;
+@def stytch-light-grey #d1d3d4;
+@def stytch-dark-banner #00a39c;
+@def stytch-light-banner #d7eeec;
+@def stytch-help-red #f04e23;
+*/
+
+.i-buttonLeftUp {
+	background-color: #d1d3d4;
+	border-top: 1px solid #808285;
+	border-bottom: 1px solid #808285;
+	border-left: 1px solid #808285;
+}
+
+.i-buttonMiddleUp {
+	background-color: #d1d3d4;
+	border-top: 1px solid #808285;
+	border-bottom: 1px solid #808285;
+}
+
+.i-buttonRightUp {
+	background-color: #d1d3d4;
+	border-top: 1px solid #808285;
+	border-bottom: 1px solid #808285;
+	border-right: 1px solid #808285;
+}
+
+.i-buttonLeftOver {
+	border-top: 1px solid #00a39c;
+	border-bottom: 1px solid #00a39c;
+	border-left: 1px solid #00a39c;
+}
+
+.i-buttonMiddleOver {
+	border-top: 1px solid #00a39c;
+	border-bottom: 1px solid #00a39c;
+}
+
+.i-buttonRightOver {
+	border-top: 1px solid #00a39c;
+	border-bottom: 1px solid #00a39c;
+	border-right: 1px solid #00a39c;
+}
+
+.i-buttonLeftDown {
+	background-color: #9da3ac;
+}
+
+.i-buttonMiddleDown {
+	background-color: #9da3ac;
+}
+
+.i-buttonRightDown {
+	background-color: #9da3ac;
+}
+
+.gwt-textBox {
+	height: 17px;
+}
+
+.gwt-TextArea {
+	font-size: small;
+}
+
+.i-input {
+	border: 1px solid #b6ae9b;
+}
+
+.i-input-error {
+	border: 1px solid #f04e23;
+	background-color: rgb(255, 237, 178);
+}
+
+.i-inputLabel {
+	color: #5d5143;
+	font-size: 12px;
+	padding-bottom: 4px;
+	font-weight: normal;
+}
+
+.i-inputLabel-lhs {
+	color: #5d5143;
+	font-size: 12px;
+	padding: 3px 0 4px 0;
+}
+
+.i-inputLabel-error {
+	color: red;
+	font-size: smaller;
+	padding-bottom: 4px;
+}
+
+.i-inputLabel-lhs-error {
+	color: red;
+	font-size: 12px;
+	padding: 3px 0 4px 0;
+}
+
+.i-buttonDisabled {
+	filter: alpha(opacity =   50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	float: left;
+}
+
+.i-buttonNoLeftStyling {
+	border-left: 1px solid #b6ae9b;
+}
+
+.i-buttonNoLeftStyling:hover {
+	border-left: 1px solid #877f70;
+}
+
+.i-buttonNoRightStyling {
+	border-right: 1px solid #b6ae9b;
+}
+
+.i-buttonNoLeftStyling-hover {
+	border-left: 1px solid #877f70;
+}
+
+.i-popup {
+	border: 1px solid #454d50;
+	background: white;
+}
+
+.i-optionButton {
+	width: 16px;
+}
+
+.i-optionButton-small {
+	padding-left: 5px;
+}
+
+.i-optionPopup {
+	z-index: 100;
+	background-color:#ffffff;
+	border: 1px solid #808285;
+}
+
+.i-optionItems {
+   padding: 3px;
+   width: 100%;
+}
+
+.i-optionItems .gwt-HTML {
+	font-size: 11px;
+}
+
+.i-optionHeader {
+	color: #000000;
+	font-weight: bold;
+	background-color: #d7eeec;
+	padding: 3px 6px 3px 6px;
+}
+
+.i-firstOptionItem {
+	color: #808285;
+	padding: 3px 6px 3px 6px;
+	border-top: 1px solid white;
+}
+
+.i-optionItem {
+	color: #808285;
+	padding: 3px 6px 3px 6px;
+}
+
+.i-optionItem-hover {
+	color: #000000;
+	background: #d7eeec;
+	cursor: pointer;
+}
+
+.i-nextOptionItem-hover {
+
+}
+
+.i-listBox {
+	color: #808285;
+	background: white;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px 3px 3px 6px;
+	margin: 0;
+	border-width: 1px 0 1px 1px;
+	border-style: solid;
+	border-color: #808285;
+	cursor: default;
+}
+
+.i-disabled {
+	filter: alpha(opacity =   25);
+	-moz-opacity: 0.25;
+	-khtml-opacity: 0.25;
+	opacity: 0.25;
+}
+
+.i-dialogContent .i-errorMsg {
+	padding: 5px 0 10px 0;
+	font-size: 11px;
+}
+
+.i-dialogHeader {
+	font-weight: bold;
+	font-size: larger;
+	padding: 12px 0 2px 0;
+}
+
+.i-dialogText {
+	padding: 1px 0 1px 0;
+}
+
+.i-dialogButtons {
+	width: 100%;
+	padding: 5px;
+	background: #646364; /* G6 */
+}
+
+.i-numericInput {
+	border: 1px solid #b6ae9b;
+	font-size: smaller;
+	padding: 2px 3px 2px 3px;
+}
+
+.i-numericInput-error {
+	color: red;
+	border: 1px solid red;
+	font-size: smaller;
+	padding: 2px 3px 2px 3px;
+	background-color: rgb(255, 237, 178);
+}
+
+.i-pager .range {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 0 5px 0 0;
+}
+
+.i-pager .page {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.i-pager .page-current {
+	color: white;
+	background-color: black;
+	cursor: default;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.i-pager .page-over {
+	color: white;
+	background-color: black;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.i-pager .page-divider {
+	background-color: white;
+	color: black;
+	cursor: default;
+}
+
+.i-messageText {
+	color: #5d5143;
+	font-size: 18px;
+	font-weight: normal;
+	padding-top: 10px;
+}
+
+.i-busyMessage {
+	background-color: white;
+	color: #5d5143;
+	font-size: large;
+	padding-top: 10px;
+}
+
+.i-busyBar {
+	background-color: #454d50;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	border: 0px;
+	padding: 3px;
+}
+
+.i-applicationError {
+	background: white;
+	width: 360px;
+	border: 1px solid #454d50;
+}
+
+.i-applicationError .header {
+	background: #6785a7; /* Popup Header */
+	margin: 3px;
+	width: 354px;
+}
+
+.i-applicationError .header .label {
+	padding: 5px 5px 5px 5px;
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+}
+
+.i-applicationError .content {
+	color: #646364;
+	font-size: 11px;
+	padding: 10px;
+	width: 340px;
+}
+
+.i-applicationError .footer {
+	background: #646364; /* G6 */
+	padding: 5px;
+	width: 100%;
+}
+
+.overlay-bg {
+	background-image: url(images/overlay50.png);
+	position: absolute;
+	top: 0pt;
+	left: 0pt;
+	z-index: 90;
+	width: 100%;
+}
+
+.overlay-popup {
+	z-index: 100;
+}
+
+* html .overlay-bg {
+	background-color: #333;
+	back\ground-color: transparent;
+	background-image: url(/images/trans.gif);
+	filter: progid : DXImageTransform.Microsoft.AlphaImageLoader ( src =
+		"/images/overlay50.png", sizingMethod = "scale" );
+}
+
+.i-lyr-icn {
+	position: relative;
+}
+
+.i-lyr-icn-0 {
+	position: absolute;
+	z-index: 0;
+}
+
+.i-lyr-icn-1 {
+	position: absolute;
+	z-index: 1;
+}
+
+.i-dialogHeader {
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+	background: #6785a7;
+	padding: 5px;
+}
+
+.i-dialogHeader .gwt-Label {
+	color: white;
+	padding: 0;
+}
+
+.i-dialogContent {
+	padding: 5px;
+}
+
+.i-dialogPanel .gwt-Label {
+	padding: 0;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.i-dialogPopupPanel .header {
+	background: #6785a7; /* Popup Header: from i-dialogHeader*/
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #6785a7;
+	margin: 5px;
+}
+
+.i-dialogPopupPanel .content {
+	padding: 10px;
+}
+
+.i-dialogPopupPanel .content .gwt-HTML {
+	font-size: 12px;
+	color: #646364; /* G6 */
+}
+
+.i-dialogPopupPanel .messageContent {
+	padding: 10px;
+}
+
+.i-dialogPopupPanel .footer {
+	background: #646364; /* G6 */
+	padding: 5px 0px 5px 0px;
+	overflow: auto;
+}
+
+.i-actionBar {
+	float: left;
+	position: relative;
+	left: 50%;
+	text-align: left;
+}
+
+.i-actionBar .actions {
+	position: relative;
+	left: -50%;
+}
+
+.i-actionBar .action {
+	display: inline;
+}
+
+.i-TreeItem {
+	padding-left: 12px;
+}
+
+.i-listItem {
+	padding: 0 1px 0 1px;
+}
+
+.i-listItem-top {
+	border-top: 1px solid white;
+}
+
+.i-listItem-bottom {
+	border-bottom: 1px solid white;
+}
+
+.i-listItem-selected {
+	border-left: solid;
+	border-right: solid;
+	border-width: 1px;
+	border-color: #c58255;
+	padding: 0;
+}
+
+.i-listItem-top-selected {
+	border-top: 1px solid #c58255;
+}
+
+.i-listItem-bottom-selected {
+	border-bottom: 1px solid #c58255;
+}
+
+.i-nestedItem {
+	border-top: 1px dashed white;
+}
+
+.i-padLeft {
+	padding-left: 19px;
+}
+
+.i-padRight {
+	padding-right: 14px;
+}
+
+.i-errorMsgs {
+	background-color: #ac4340;
+	color: white;
+}
+
+.i-errorMsg {
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.i-htmlList {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.i-selectable {
+	cursor: pointer;
+}
+
+.i-defaultCursor {
+	cursor: default;
+}
+
+.i-msgDisplayer {
+	padding: 5px 0 10px 3px;
+}
+
+.i-errorMessage {
+	color: red;
+}
+
+div.i-errorTitle {
+	font-size: 15px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+
+.i-planSummary {
+	margin-bottom: 10px;
+}
+
+.i-planSummary .gwt-Label,
+.i-planSummary .billing.gwt-HTML {
+	font-weight: normal;
+	color: #5d5143;
+	font-size: 13px;
+	padding: 1px 3px 1px 3px;
+}
+
+.i-planSummary .header {
+	background-color: #4f81bc;
+	height: 15px;
+}
+
+.i-planSummary .header .gwt-Label {
+	color: white;
+	font-weight: bold;
+}
+
+.i-planSummary .odd {
+	background-color: #d0d7e7;
+}
+
+.i-planSummary .even {
+	background-color: #e9eef4;
+}
+
+.i-planSummary .colLabel {
+	width: 110px;
+}
+
+.i-planSummary .colContent {
+	width: 320px;
+}
+
+.i-planSummary .colButton {
+	width: 80px;
+}
+
+.i-planSummary .i-buttonText {
+	font-size: 10px;
+}
+
+.i-freeTrialNotification {
+	color: #5d5143;
+	font-size: 13px;
+	padding-bottom: 5px;
+}
+
+.i-freeTrialNotification .gwt-Label {
+	font-weight: normal;
+	padding: 1px 3px 1px 3px;
+}
+
+.i-freeTrialNotification .header {
+	background-color: #9bba58;
+	height: 15px;
+}
+
+.i-freeTrialNotification .header .gwt-Label {
+	font-weight: bold;
+}
+
+.i-freeTrialNotification .header .gwt-Label {
+	color: white;
+}
+
+.i-freeTrialNotification .odd {
+	background-color: #dee7d2;
+}
+
+.i-freeTrialNotification .even {
+	background-color: #eff3e9;
+}
+
+.i-freeTrialNotification .colLabel {
+	width: 110px;
+}
+
+.i-planUsage {
+	color: #5d5143;
+	font-size: 13px;
+}
+
+.i-planUsage .gwt-Label,.i-planUsage .gwt-HTML {
+	font-weight: normal;
+	padding: 1px 3px 1px 3px;
+}
+
+.i-planUsage .header {
+	background-color: #8063a0;
+	height: 15px;
+}
+
+.i-planUsage .header .gwt-Label {
+	color: white;
+	font-weight: bold;
+}
+
+.i-planUsage .odd {
+	background-color: #d7d3e0;
+}
+
+.i-planUsage .even {
+	background-color: #eceaf0;
+}
+
+.i-planUsage .colLabel {
+	width: 120px;
+}
+
+.i-planUsage .colContent {
+	width: 320px;
+}
+
+.i-planUsage .colButton {
+	width: 80px;
+}
+
+.i-planUsage .errorBg {
+	background: #e0afaf;
+}
+
+.i-LicensingInfo .subtitle {
+	color: #646364;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.btn_option_small {
+	width: 48px;
+	height: 12px;
+	display: block;
+	background: url(/images/btn_actions.gif) no-repeat 0 0;
+    margin: 0 0 0 5px;
+}  
+
+
+.btn_option_small:hover {
+	background: url(/images/btn_actions.gif) no-repeat 0 -12px;
+}
+
+.i-menuPopup .container{
+	background: white;
+}
+
+.i-menuPopup-shadow {
+	overflow:visible;
+}
+.i-menuPopup-shadow td{
+	padding:0;
+	font-size:0;
+}
+.i-menuPopup-shadow td div, 
+.i-menuPopup-shadow td a, 
+.i-menuPopup-shadow td p, 
+.i-menuPopup-shadow td span{
+	font-size: 12px;
+}
+.i-menuPopup-shadow td.br{
+	height:5px;
+	width:5px;
+}
+.i-menuPopup-shadow td.tr{
+	background-image:url(/images/mShadowR.png);
+	_background-image: none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/mShadowR.png', sizingMethod='scale');
+}
+.i-menuPopup-shadow td.bl{
+	background-image:url(/images/mShadowB.png);
+	_background-image: none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/mShadowB.png', sizingMethod='scale');
+}
+.i-menuPopup-shadow td.br{
+	background-image:url(/images/mShadowBR.png);
+	_background-image: none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/mShadowBR.png', sizingMethod='scale');
+}
+
+/* 3rd party widgets*/
+/* rate it widget */
+.t-RateIt {
+  cursor: pointer;
+}
+.t-RateIt img {
+  width: 16px;
+  height: 16px;
+}
+.t-RateItCursor {
+  cursor: default;
+}

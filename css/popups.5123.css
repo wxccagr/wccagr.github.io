@@ -1,0 +1,60 @@
+
+.i-trusteMyprofile{
+   width: 271px;
+   height: 80px;
+   background: url(/images/privacy/truste_seal_web.gif) no-repeat;
+   background-position: 0px 30px;
+   cursor: pointer;
+}
+
+.i-popup_clickableText {
+	background: #eee;
+	padding: 3px;
+	text-decoration: none;
+	border-bottom: 1px dotted #999;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+
+.i-invitePanel {
+	border: 1px solid #454d50;
+	background: white;
+	width: 400px;
+}
+
+.i-invitePanelContent {
+	color: #463e31;
+	font-size: 1em;
+	margin: 5px 10px 10px 10px;
+}
+
+.i-invitePanelEmailHelper {
+	font-size: 0.86em;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.i-invitePanelEmail {
+	width: 380px;
+	margin: 0px 0px 8px 0px;
+}
+
+.i-invitePanelSubject {
+	width: 380px;
+	margin: 0px 0px 8px 0px;
+}
+
+.i-invitePanelMessage {
+	width: 380px;
+	height: 180px;
+}
+
+.i-invitePanelError {
+	border: 1px solid #FF0000;
+}
+
+.errorLabel {
+	color: red;
+}
+

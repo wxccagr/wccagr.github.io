@@ -1,0 +1,199 @@
+
+body {
+    font-family: Strait, Helvetica, Helvetica Neue, Arial, sans-serif; /* calabrio */
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
+textarea, input, button, pre {
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif; /* calabrio */
+}
+
+.gwt-Image {
+	border: none;
+}
+
+
+/**********************************************
+	Rounded Panel - FIXME these are also defined in profile.css and consolidation is required 
+***********************************************/
+
+
+/* These are for the rounded panels; cleanup to come later */
+.rounded-background {
+	background: #eeeeee;
+}
+
+.xb1,.xb2,.xb3,.xb4 {
+	display: block;
+	overflow: hidden;
+}
+
+.xb1,.xb2,.xb3 {
+	height: 1px;
+}
+
+.xb2,.xb3,.xb4 {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.xb1 {
+	margin: 0 5px;
+	background: black;
+}
+
+/* top and bottom borders */
+.xb2 {
+	margin: 0 3px;
+	border-width: 0 2px;
+}
+
+/* rounding */
+.xb3 {
+	margin: 0 2px;
+}
+
+/* rounding */
+.xb4 {
+	height: 2px;
+	margin: 0 1px;
+}
+
+/* rounding */
+.xboxcontent {
+	display: block;
+	border: 0 solid black;
+	border-width: 0 1px;
+}
+
+.xroundBlock {
+	background: transparent;
+	margin: 0.5em;
+}
+
+.xtop,.xbottom {
+	display: block;
+	background: transparent;
+	font-size: 1px;
+}
+
+
+/** Comments */
+
+
+.i-Comment {
+    background-color: #f3f3f3;
+    padding-left:10px;
+}
+
+.i-CommentRound {
+    background-color: #dadada;
+}
+
+.i-Comment .i-CommentContent { /* content title */
+	color: #414042; /* G7 */
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.i-Comment .i-CommentUserName { /* description */
+	color: #3884cd; /*#888686;*/ /* G5 */
+	font-weight: bold;
+	font-size: 11px;
+}
+
+
+.i-subtleInfoText {
+	color: #cfccc9; /* G3 */
+	font-size: smaller;
+	font-style: italic;
+}
+
+.i-subtleInfoText-error {
+	color: red;
+	font-size: smaller;
+	font-style: italic;
+}
+
+.gwt-Image.i-CommentBottom  {
+	vertical-align:bottom;
+}
+
+.i-CommentButton {
+	float:left;
+	padding-right:2px;
+	cursor: pointer;
+}
+
+.i-CommentCentered {
+	overflow:visible;
+	margin-left:35px;
+	margin-top:15px;	
+}
+
+/*****
+DISCLOSURE PANEL
+******/
+
+.i-defaultDisclosure {
+	background-color: white;
+	text-decoration: none;
+}
+
+/*
+	For GWT disclosure panel; keeps IE from rendering text with underlines.
+	(GWT wraps all disclosure headers in <a>.)
+*/
+.i-defaultDisclosure .header {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.i-defaultDisclosure .i-DisclosurePanelContent {
+	background-color: white;
+	background-image: none;
+	width: 100%;
+        border-left: 1px solid #DBD6CC;
+        border-right: 1px solid #DBD6CC;
+        border-bottom: 1px solid #DBD6CC;
+}
+.i-defaultDisclosure .i-DisclosurePanelContent .gwt-HTML{
+    font-size: normal;
+    font-weight: normal;
+	padding: 5px;
+	color: #414042;
+}
+.i-DisclosurePanelContent .nestedContentItem {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.i-defaultDisclosure .i-DisclosurePanelHeader {
+	border-width: 1px 1px 0 1px;
+	border-color: #dbd6cc;
+	border-style: solid;
+	background-color: #f1f1f1;
+	height: 32px;
+	padding-left: 9px;
+	padding-right: 18px;
+}
+
+.i-defaultDisclosure .i-DisclosurePanelHeader .heading {
+	/* Caps head */
+	color: #646364; /* G6 */
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 7px;
+	padding-left: 5px;
+	padding-top: 7px;
+}
+
+.i-defaultDisclosure .i-DisclosurePanelHeader .summary {
+	/* Misc type */
+	color: #646364; /* G6 */
+	font-size: 10px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	padding-top: 7px;
+}

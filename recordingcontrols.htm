@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html class="dj_webkit dj_chrome dj_contentbox">
+    <head>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+// demo load language file
+var lang= window.localStorage.getItem('lang')?window.localStorage.getItem('lang'):"en";
+var s = document.createElement('script');
+s.src = "language/" + lang + ".js?" + new Date().getTime();
+s.type = "text/javascript";
+s.async = false;
+document.getElementsByTagName('head')[0].appendChild(s);
+</script>	
+<meta charset="utf-8">
+		
+		<style type="text/css">
+            @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate) {
+                display: none !important;
+            }
+
+            ng\:form {
+                display: block;
+            }
+
+            .ng-animate-shim {
+                visibility: hidden;
+            }
+
+            .ng-anchor {
+                position: absolute;
+            }
+        </style>
+        <title id="titleTag">Calabrio ONE</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/>
+        <style>
+            /*
+These need to be declared before angular bootstraps.
+Otherwise angular will not add the transition classes.
+*/
+            .group-by-row__inner.ng-enter-prepare, .group-by-row__inner.ng-leave {
+                transition: 10s;
+            }
+        </style>
+        <style data-jss="">
+            .filterInput-0-0-1 {
+                width: 100% !important;
+                margin-bottom: 4px;
+            }
+
+            .titleContainer-0-0-2 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .titleLabel-0-0-3 {
+                flex: 1 1 auto;
+                text-align: center;
+            }
+
+            .sortIcon-0-0-4 {
+                flex: 0 0 auto;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-5 {
+                position: relative;
+                margin-left: 20px;
+            }
+
+            .usernameContainer-0-0-6 {
+                color: white;
+                cursor: pointer;
+                display: flex;
+                opacity: 0.7;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            .dropdown-0-0-8 {
+                right: 0;
+                width: 225px;
+                bottom: 0;
+                position: absolute;
+                transform: translateY(100%);
+                border-top: 3px solid #4FC3F7;
+                box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+                white-space: nowrap;
+                border-radius: 4px;
+                background-color: #fff;
+            }
+
+            .menuItem-0-0-9 {
+                color: rgba(0, 0, 0, 0.87);
+                cursor: pointer;
+                padding: 8px 16px;
+                overflow: hidden;
+            }
+
+            .menuItem-0-0-9:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+
+            .tenantInfo-0-0-10 {
+                color: rgba(0, 0, 0, 0.87);
+                display: flex;
+                padding: 8px 16px;
+                overflow: hidden;
+            }
+
+            .tenantLabel-0-0-11 {
+                color: rgba(0, 0, 0, 0.54);
+                padding-right: 5px;
+            }
+
+            .toggleItem-0-0-13 {
+                color: rgba(0, 0, 0, 0.87);
+                cursor: pointer;
+                padding: 8px 16px;
+                overflow: hidden;
+                text-indent: 8px;
+            }
+
+            .toggleItem-0-0-13:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+
+            .divider-0-0-14 {
+                border: none;
+                height: 1px;
+                margin: 0;
+                list-style: none;
+                flex-shrink: 0;
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-15 {
+                width: 24px;
+                cursor: pointer;
+                height: 24px;
+                position: relative;
+            }
+
+            .checkboxIcon-0-0-16 {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .focusedIcon-0-0-17 {
+                border-radius: 25%;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            .input-0-0-18 {
+                top: 0;
+                left: 0;
+                width: 24px;
+                cursor: default;
+                height: 24px;
+                margin: 0;
+                opacity: 0;
+                position: absolute;
+            }
+
+            .input-0-0-18:enabled {
+                cursor: pointer;
+            }
+
+            .disabled-0-0-19 {
+                cursor: default;
+                opacity: 0.36;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-20 {
+                width: 24px;
+                cursor: pointer;
+                height: 24px;
+                position: relative;
+            }
+
+            .checkboxIcon-0-0-21 {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .focusedIcon-0-0-22 {
+                border-radius: 25%;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            .input-0-0-23 {
+                top: 0;
+                left: 0;
+                width: 24px;
+                cursor: default;
+                height: 24px;
+                margin: 0;
+                opacity: 0;
+                position: absolute;
+            }
+
+            .input-0-0-23:enabled {
+                cursor: pointer;
+            }
+
+            .disabled-0-0-24 {
+                cursor: default;
+                opacity: 0.36;
+            }
+        </style>
+        <style data-jss=""></style>
+        <style data-jss="">
+            .root-0-0-28 {
+                width: 24px;
+                height: 24px;
+                position: relative;
+            }
+
+            .input-0-0-29 {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                opacity: 0;
+                position: absolute;
+            }
+
+            .input-0-0-29:enabled {
+                cursor: pointer;
+            }
+
+            .radioIcon-0-0-30 {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+        </style>
+        <style data-jss="">
+            .textbox {
+                width: inherit;
+                padding: 1px;
+                position: relative;
+                font-size: 14px;
+                border-style: solid;
+                border-radius: 4px;
+            }
+
+            .textbox input[type='text'], .textbox [type='password'], .textbox [type='email'] {
+                width: 100%;
+                border: none;
+            }
+
+            .textbox input[disabled], .textbox select[disabled] {
+                background-color: inherit;
+            }
+
+            .textbox input[type='text']::- webkit - input - placeholder, .textbox [type='password']::- webkit - input - placeholder, .textbox [type='email']::- webkit - input - placeholder {
+                color: #AAAAAA;
+                font-size: 14px;
+                font-style: italic;
+                font-family: Strait, Verdana, Arial, sans-serif;
+            }
+
+            .textbox input[type='text']::-moz-placeholder, .textbox [type='password']::-moz-placeholder, .textbox [type='email']::-moz-placeholder {
+                color: #AAAAAA;
+                font-size: 14px;
+                font-style: italic;
+                font-family: Strait, Verdana, Arial, sans-serif;
+            }
+
+            .textbox input[type='text']:- ms - input - placeholder, .textbox [type='password']:- ms - input - placeholder, .textbox [type='email']:- ms - input - placeholder {
+                color: #AAAAAA;
+                font-size: 14px;
+                font-style: italic;
+                font-family: Strait, Verdana, Arial, san -serif;
+            }
+
+            .textbox input[type='text']:-moz-placeholder, .textbox [type='password']:-moz-placeholder, .textbox [type='email']:-moz-placeholder {
+                color: #AAAAAA;
+                font-size: 14px;
+                font-style: italic;
+                font-family: Strait, Verdana, Arial, sans-serif;
+            }
+
+            .textBoxFocused {
+                padding: 0 !important;
+                border-color: #4FC3F7 !important;
+                border-width: 2px !important;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-31 {
+                position: relative;
+            }
+
+            .svg-0-0-32 {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .path-0-0-33 {
+                fill: currentcolor;
+            }
+
+            material-icon {
+                display: inline-block;
+            }
+        </style>
+        <style data-jss="">
+            .items-0-0-36 {
+                border: 1px solid #c8c8c8;
+                height: 242px;
+                overflow-y: auto;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-37 {
+                cursor: pointer;
+                padding: 3px 10px;
+                font-size: 12px;
+                word-wrap: break-word;
+                user-select: none;
+            }
+
+            .root-0-0-37:hover:not(.selected-0-0-38) {
+                background-color: #c2c2c2;
+            }
+
+            .selected-0-0-38 {
+                color: #fdfdfd;
+                background-color: #62B5E5;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-39 {
+                color: #fdfdfd;
+                padding: 5px 2px;
+                font-size: 18px;
+                background: linear-gradient(to bottom, #404040 0%, #6c6c6b 40%, #707070 100%);
+                border-top: 1px solid #c8c8c8;
+                line-height: 22px;
+                user-select: none;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-40 {
+                width: 320px;
+                outline: none;
+                position: fixed;
+                box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+                max-height: calc(100vh - 50px);
+                min-height: 100px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                border-radius: 4px;
+                background-color: #fff;
+            }
+        </style>
+        <style data-jss=""></style>
+        <style data-jss="">
+            .root-0-0-42 {
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+                background-color: #ececec;
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-43 {
+                border-top: 3px solid #4FC3F7;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                background-color: #ececec;
+            }
+        </style>
+        <style data-jss="">
+            menu-item {
+                display: block;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+            menu-item:last-child {
+                border-bottom: none;
+            }
+
+            menu-item:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-45 {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: fixed;
+            }
+        </style>
+        <style data-jss=""></style>
+        <style data-jss="">
+            .root-0-0-52 {
+                display: inline-block;
+                animation: keyframes-muiProgressCircularRotate-0-0-55 1.4s linear infinite;
+                line-height: 1;
+            }
+
+            .circle-0-0-54 {
+                animation: keyframes-muiProgressCircularDash-0-0-56 1.4s ease-in-out infinite;
+                stroke-dasharray: 80px, 200px;
+                stroke-dashoffset: 0px;
+            }
+
+            @-webkit-keyframes keyframes-muiProgressCircularRotate-0-0-55 {
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @-webkit-keyframes keyframes-muiProgressCircularDash-0-0-56 {
+                0% {
+                    stroke-dasharray: 1px, 200px;
+                    stroke-dashoffset: 0px;
+                }
+
+                50% {
+                    stroke-dasharray: 100px, 200px;
+                    stroke-dashoffset: -15px;
+                }
+
+                100% {
+                    stroke-dasharray: 100px, 200px;
+                    stroke-dashoffset: -120px;
+                }
+            }
+        </style>
+        <style data-jss="">
+            .root-0-0-57 {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1300;
+                position: fixed;
+            }
+
+            .background-0-0-58 {
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+                background-color: #000;
+            }
+
+            .centeredContainer-0-0-59 {
+                top: 50%;
+                left: 50%;
+                display: flex;
+                padding: 10px;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .message-0-0-61 {
+                padding: 10px 0;
+                max-width: 200px;
+                text-align: center;
+            }
+
+            .cancelButton-0-0-62 {
+                cursor: pointer;
+                padding-top: 10px;
+                text-decoration: underline;
+            }
+        </style>
+        <style data-jss=""></style>
+        <style data-jss="">
+            .dijitRadio {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%3E%3Cpath%20d='M12,20C7.58,20%204,16.42%204,12C4,7.58%207.58,4%2012,4C16.42,4%2020,7.58%2020,12C20,16.42%2016.42,20%2012,20M12,2C6.48,2%202,6.48%202,12C2,17.52%206.48,22%2012,22C17.52,22%2022,17.52%2022,12C22,6.48%2017.52,2%2012,2Z'%20fill='rgba(0,%200,%200,%200.87)'%3E%3C/path%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+            }
+
+            .dijitRadio.dijitRadioChecked {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%3E%3Cpath%20d='M12,20C7.58,20%204,16.42%204,12C4,7.58%207.58,4%2012,4C16.42,4%2020,7.58%2020,12C20,16.42%2016.42,20%2012,20M12,2C6.48,2%202,6.48%202,12C2,17.52%206.48,22%2012,22C17.52,22%2022,17.52%2022,12C22,6.48%2017.52,2%2012,2M12,7C9.24,7%207,9.24%207,12C7,14.76%209.24,17%2012,17C14.76,17%2017,14.76%2017,12C17,9.24%2014.76,7%2012,7Z'%20fill='rgb(79,195,247)'%3E%3C/path%3E%3C/svg%3E");
+            }
+
+            .dijitRadio input {
+                width: 24px;
+                border: none;
+                height: 24px;
+                opacity: 0.01;
+            }
+
+            .dijitRadio input:enabled {
+                cursor: pointer;
+            }
+        </style>
+        <style data-jss="">
+            html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+                font: inherit;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                vertical-align: middle;
+            }
+
+            *, *:focus, input, textarea, input:focus, textarea:focus {
+                outline: none;
+            }
+
+            article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+
+            ol, ul {
+                list-style: none;
+            }
+
+            blockquote, q {
+                quotes: none;
+            }
+
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+
+            embed {
+                top: -50000px;
+                width: 0;
+                height: 0;
+                position: absolute;
+            }
+
+            html, body, input, textarea {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 14px;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                font-weight: 400;
+            }
+        </style>
+        <style data-jss="">
+            dashboard-classic {
+                flex: 1 1 auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .root-0-0-63 {
+                height: 0 !important;
+            }
+        </style>
+        <style data-jss=""></style>
+        <!-- ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/c99b9b148e7b00d0c233f9686a2be59f.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/c99b9b148e7b00d0c233f9686a2be59f.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/4001e849a06d6bc10afc33c82161d05b.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/4001e849a06d6bc10afc33c82161d05b.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/ab7247d444fee62de072f6a321ababfd.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/ab7247d444fee62de072f6a321ababfd.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/e470fe8e9a3b32109b23519349e5c453.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/e470fe8e9a3b32109b23519349e5c453.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/e6b2cea849266d726b6d06da1fbabf6b.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/e6b2cea849266d726b6d06da1fbabf6b.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/e9d48df6052fe23aa3e5c929aa1af60a.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/e9d48df6052fe23aa3e5c929aa1af60a.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/0ce1a96e9f927e48c05807a0359e60bc.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/0ce1a96e9f927e48c05807a0359e60bc.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/59f8905cbea048eab534be756cdadcc7.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/59f8905cbea048eab534be756cdadcc7.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/5de6634df7497edd30259a653a655adb.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/5de6634df7497edd30259a653a655adb.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/9667ce29dbae63b065ce16e124c2f7c0.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/9667ce29dbae63b065ce16e124c2f7c0.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/475aba2255300b0ac312e0b089a3b4c2.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/475aba2255300b0ac312e0b089a3b4c2.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/98137250d4d0d16cb4c321aaa02147fd.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/98137250d4d0d16cb4c321aaa02147fd.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/47fa05da0a9ae127073bcd97ac4e4157.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/47fa05da0a9ae127073bcd97ac4e4157.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/3c1611445b63838c4780eb2894b2398a.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/3c1611445b63838c4780eb2894b2398a.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/1a85000ca51a234f3597340560086ae2.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/1a85000ca51a234f3597340560086ae2.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/3dfcbdb45917123b055367de39b3fe58.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/3dfcbdb45917123b055367de39b3fe58.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/01ef7ea6ddf37179fe9725e9fcd36f22.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/01ef7ea6ddf37179fe9725e9fcd36f22.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/a0ae0d66c9b7fe382908321c87d16cf9.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/a0ae0d66c9b7fe382908321c87d16cf9.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/c820c1c8ca66d01008582e30a8791c10.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/c820c1c8ca66d01008582e30a8791c10.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/86a1a56f83e0f32511a1a9a33d07ce1c.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/86a1a56f83e0f32511a1a9a33d07ce1c.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/d8923d113c2ee0b21dd1543bb6011821.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/d8923d113c2ee0b21dd1543bb6011821.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/d301099755099fce413765862ea03674.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/d301099755099fce413765862ea03674.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link ng-repeat="stylesheet in stylesheets | orderBy: 'weight' track by $index " rel="stylesheet" type="text/css" ng-href="./classic/303b46d4d6fe72f9104b735993f9df95.css" ng-attr-media="{{ stylesheet.media }}" class="ng-scope" href="./classic/303b46d4d6fe72f9104b735993f9df95.css">
+        <!-- end ngRepeat: stylesheet in stylesheets | orderBy: 'weight' track by $index  -->
+        <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon" id="faviconTag">
+    </head>
+    <body class="cone calabrio" >
+        <div id="ngAppContainer" class="ng-scope" >
+            <!-- uiView: -->
+            <div data-ui-view="" class="ng-scope" style="">
+                <div class="cone calabrio ng-scope app-container" ng-class="showHeader ? 'app-container' : 'app-container app-container--own-window'" style="padding-left:0; padding-right:0;">
+ 
+ <!-- uiView: -->
+                    <div class="mainBody ng-scope" data-ui-view="">
+                        <!-- http://confluence/display/TEAM/Form+Format -->
+                        <div class="app-wrapper recordingControls ng-scope">
+                            <div class="app-title">
+                                <img src="./classic/0d430f218d1cca421d1cf107303739cd.png" width="25" height="25" align="top" class="header-img">
+                                <h1 lang="recordingControls" en="Recording Controls" class="lang ng-binding"></h1>
+                            </div>
+                            <form class="form ng-pristine ng-valid ng-valid-maxlength ng-valid-custom-required" ng-submit="vm.submit()">
+                                <div class="formContentContainer">
+                                    <div class="formContent">
+                                        <div class="loginContainer">
+                                            <!-- ngIf: vm.permissions.LoginLogoutCommandUI -->
+                                            <div ng-if="vm.permissions.LoginLogoutCommandUI" class="ng-scope">
+                                                <button type="button" class="recordButton btn btn-tertiary ng-binding" ng-click="vm.setLoginAction()" ng-disabled="vm.loggedIn">
+                                                    <i class="icon-enter"></i>
+                                                    <span lang="login" en="Log In" class="lang"></span>
+                        
+                                                </button>
+                                                <button type="button" class="recordButton btn btn-tertiary ng-binding" ng-click="vm.setLogoutAction()" ng-disabled="!vm.loggedIn" disabled="disabled">
+                                                    <i class="icon-exit"></i>
+                                                    <span lang="logOut" en="Log Out" class="lang"></span>
+                        
+                                                </button>
+                                                <div class="login-status">
+                                                    <span ng-show="vm.loggedIn" class="ng-binding ng-hide">Logged into telephone extension: </span>
+                                                </div>
+                                            </div>
+                                            <!-- end ngIf: vm.permissions.LoginLogoutCommandUI -->
+                                        </div>
+                                        <div class="button-group recordButtonContainer">
+                                            <div class="recordButtonLayout">
+                                                <!-- ngIf: vm.permissions.StartStopScreenCommandUI -->
+                                                <div ng-if="vm.permissions.StartStopScreenCommandUI" class="ng-scope">
+                                                    <button type="button" class="recordButton btn btn-tertiary ng-binding" ng-click="vm.startScreen()">
+                                                        <i class="icon-play4"></i>
+                                                        <span lang="startScreen" en="Start Screen" class="lang"></span>
+                            
+                                                    </button>
+                                                    <button type="button" class="recordButton btn btn-tertiary ng-binding" ng-click="vm.stopScreen()">
+                                                        <i class="icon-stop2"></i>
+                                                        <span lang="stopScreen" en="Stop Screen" class="lang"></span>
+                            
+                                                    </button>
+                                                </div>
+                                                <!-- end ngIf: vm.permissions.StartStopScreenCommandUI -->
+                                                <!-- ngIf: vm.permissions.StartStopSegmentCommandUI -->
+                                                <div ng-if="vm.permissions.StartStopSegmentCommandUI" class="ng-scope">
+                                                    <button type="button" lang="segmentAndDelete" en="Segment and Delete" class="lang recordButton btn btn-tertiary ng-binding" ng-click="vm.start()">
+                            </button>
+                                                    <button type="button" lang="segmentAndSave" en="Segment and Save" class="lang recordButton btn btn-tertiary ng-binding" ng-click="vm.stop()">
+                            </button>
+                                                </div>
+                                                <!-- end ngIf: vm.permissions.StartStopSegmentCommandUI -->
+                                                <!-- ngIf: vm.permissions.PauseResumeCommandUI -->
+                                                <div ng-if="vm.permissions.PauseResumeCommandUI" class="ng-scope">
+                                                    <button type="button" class="recordButton btn btn-tertiary ng-binding" ng-click="vm.pause()">
+                                                        <i class="icon-pause2"></i>
+                                                        <span lang="pause" en="Pause" class="lang"></span>
+                            
+                                                    </button>
+                                                    <button type="button" class="recordButton btn btn-tertiary ng-binding" ng-click="vm.resume()">
+                                                        <i class="icon-play4"></i>
+                                                        <span lang="resume" en="Resume" class="lang"></span>
+                            
+                                                    </button>
+                                                </div>
+                                                <!-- end ngIf: vm.permissions.PauseResumeCommandUI -->
+                                                <!-- ngIf: vm.permissions.AddMetadataCommandUI || vm.permissions.TagCommandUI -->
+                                                <div ng-if="vm.permissions.AddMetadataCommandUI || vm.permissions.TagCommandUI" class="ng-scope">
+                                                    <!-- ngIf: vm.permissions.AddMetadataCommandUI -->
+                                                    <button ng-if="vm.permissions.AddMetadataCommandUI" type="button" class="recordButton btn btn-tertiary ng-binding ng-scope" ng-click="vm.setMetadataAction()">
+                                                        <i class="icon-stack"></i>
+                                                        <span lang="addMetadata" en="Add Metadata" class="lang"></span>
+                            
+                                                    </button>
+                                                    <!-- end ngIf: vm.permissions.AddMetadataCommandUI -->
+                                                    <!-- ngIf: vm.permissions.TagCommandUI -->
+                                                    <button ng-if="vm.permissions.TagCommandUI" type="button" class="recordButton btn btn-tertiary ng-binding ng-scope" ng-click="vm.tag()">
+                                                        <i class="icon-custom-tag-contact"></i>
+                                                        <span lang="tag" en="Tag" class="lang"></span>
+                            
+                                                    </button>
+                                                    <!-- end ngIf: vm.permissions.TagCommandUI -->
+                                                </div>
+                                                <!-- end ngIf: vm.permissions.AddMetadataCommandUI || vm.permissions.TagCommandUI -->
+                                            </div>
+                                        </div>
+                                        <div class="controlContainer ng-hide" ng-show="vm.loggingInState() || vm.isSendingMetadata()">
+                                            <!-- ngIf: vm.loggingInState() -->
+                                            <!-- ngIf: vm.isSendingMetadata() -->
+                                            <div class="input-group ng-hide" ng-show="vm.loggingInState()">
+                                                <div class="controlInfo ng-binding">To log in to Recording Controls, enter your telephone extension and click Submit.</div>
+                                                <div class="controlLabel">
+                                                    <div class="controlItemLabel h5 ng-binding">Telephone Extension</div>
+                                                </div>
+                                                <div>
+                                                    <text-box class="input ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty" ng-model="vm.extension">
+                                                        <span>
+                                                            <!-- ngIf: !isValid() -->
+                                                            <div class="textbox dijitTextBox" ng-class="{'dijitDisabled dijitTextBoxDisabled dijitValidationTextBoxDisabled': disableInput, 'textBoxFocused': isFocused, 'invalidTextbox': !isValid()}">
+                                                                <div class="dijitInputField dijitInputContainer angularDijitInputContainer input-wrapper">
+                                                                    <!-- ngIf: noDirty -->
+                                                                    <!-- ngIf: !noDirty -->
+                                                                    <input ng-disabled="disableInput" ng-change="onChange()" ng-blur="onFocus(false)" ng-focus="onFocus(true)" data-ng-if="!noDirty" type="text" data-ng-model="data.value" ng-trim="true" data-ng-attr-placeholder="{{placeholder}}" maxlength="" class="ng-pristine ng-untouched ng-valid ng-scope ng-empty ng-valid-maxlength" placeholder="">
+                                                                    <!-- end ngIf: !noDirty -->
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </text-box>
+                                                </div>
+                                            </div>
+                                            <div class="input-group ng-hide" ng-show="vm.isSendingMetadata()">
+                                                <div class="controlInfo ng-binding">Select the metadata field and provide value then press submit.</div>
+                                                <div class="controlLabel">
+                                                    <div class="controlItemLabel h5 ng-binding">Metadata Key</div>
+                                                </div>
+                                                <div>
+                                                    <dijit-filtering-select data="vm.metadata" id="key" label="name" ng-model="vm.metadataKey" class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty ng-valid-custom-required">
+                                                        <div class="dijit dijitReset dijitInline dijitLeft dijitTextBox dijitComboBox dijitValidationTextBox standardInputLength" id="widget_dijit_form_FilteringSelect_0" role="combobox" aria-haspopup="true" data-dojo-attach-point="_popupStateNode" aria-disabled="false" widgetid="dijit_form_FilteringSelect_0">
+                                                            <div class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="_buttonNode" role="presentation">
+                                                                <input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="button presentation" aria-hidden="true">
+                                                            </div>
+                                                            <div class="dijitReset dijitValidationContainer">
+                                                                <input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation">
+                                                            </div>
+                                                            <div class="dijitReset dijitInputField dijitInputContainer">
+                                                                <input class="dijitReset dijitInputInner" type="text" autocomplete="off" data-dojo-attach-point="textbox,focusNode" role="textbox" aria-autocomplete="list" tabindex="0" id="dijit_form_FilteringSelect_0" aria-required="false" aria-disabled="false" value="" aria-invalid="false">
+                                                                <span class="dijitPlaceHolder dijitInputField" style="display: none;"></span>
+                                                                <input type="hidden" value="">
+                                                            </div>
+                                                        </div>
+                                                    </dijit-filtering-select>
+                                                </div>
+                                                <div class="controLabel">
+                                                    <div class="controlItemLabel h5 ng-binding">Metadata Value</div>
+                                                </div>
+                                                <div ng-switch="" on="vm.metadataKey.type">
+                                                    <!-- ngSwitchWhen: Date -->
+                                                    <!-- ngSwitchDefault: -->
+                                                    <text-box ng-switch-default="" class="input ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-empty" ng-model="vm.metadataValue">
+                                                        <span>
+                                                            <!-- ngIf: !isValid() -->
+                                                            <div class="textbox dijitTextBox" ng-class="{'dijitDisabled dijitTextBoxDisabled dijitValidationTextBoxDisabled': disableInput, 'textBoxFocused': isFocused, 'invalidTextbox': !isValid()}">
+                                                                <div class="dijitInputField dijitInputContainer angularDijitInputContainer input-wrapper">
+                                                                    <!-- ngIf: noDirty -->
+                                                                    <!-- ngIf: !noDirty -->
+                                                                    <input ng-disabled="disableInput" ng-change="onChange()" ng-blur="onFocus(false)" ng-focus="onFocus(true)" data-ng-if="!noDirty" type="text" data-ng-model="data.value" ng-trim="true" data-ng-attr-placeholder="{{placeholder}}" maxlength="" class="ng-pristine ng-untouched ng-valid ng-scope ng-empty ng-valid-maxlength" placeholder="">
+                                                                    <!-- end ngIf: !noDirty -->
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </text-box>
+                                                    <!-- end ngSwitchWhen: -->
+                                                </div>
+                                            </div>
+                                            <input type="submit" class="recordButton btn btn-primary" value="Submit" ng-disabled="!vm.isSubmitEnabled()" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <cone-footer one-liner="true" class="ng-isolate-scope">
+                        <footer>
+                            <!-- ngIf: $ctrl.showDbUpgrade && $ctrl.systemProperties.dbUpdateRequired -->
+                            <div style="width: 100%;">
+                                <div ng-class="{'right': $ctrl.oneLiner}" class="ng-binding right">11.5.28.65 </div>
+                                <div class="ng-binding">© 2008-2024 All rights reserved.</div>
+                                <!-- ngIf: !$ctrl.oneLiner -->
+                            </div>
+                        </footer>
+                    </cone-footer>
+                </div>
+            </div>
+        </div>
+<script>
+$(document).ready( langloop );
+
+function langloop() {
+	if(typeof(lang_x)!='object') {
+		setTimeout(langloop,1);
+		return;
+	}
+	$(".lang").each(function() {
+		word = lang_x[$(this).attr("lang")]?lang_x[$(this).attr("lang")]:$(this).attr("en");
+		if(word.indexOf("{{")>-1) word=word.substring(0,word.indexOf("{{"))
+		$(this).text(word);	
+	})
+}
+</script>
+    </body>
+</html>
